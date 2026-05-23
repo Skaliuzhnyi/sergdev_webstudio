@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import FloatCta from './components/FloatCta'
@@ -29,6 +30,7 @@ export default function App() {
       <Footer />
       <FloatCta />
       <Analytics />
+      <SpeedInsights />
     </>
   )
 }
