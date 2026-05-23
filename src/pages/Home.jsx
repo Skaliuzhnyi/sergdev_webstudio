@@ -42,7 +42,7 @@ export default function Home() {
         <div className="dv"/>
         <Why />
         <div className="dv"/>
-        <Portfolio limit={6} />
+        <Portfolio />
         <div className="dv"/>
         <Process />
         <div className="dv"/>
