@@ -44,8 +44,8 @@
   --text3: #767676;   /* 4.54:1 on white ✓ (WCAG AA) */
 
   /* Accent — dark green, 5.2:1 on white ✓ */
-  --accent:    #3a6b00;
-  --accent2:   #2d5400;
+  --accent: #9ee744;
+  --accent2: #7eb938;
   --accent-dim: rgba(58,107,0,.10);
   --accent-rgb: 58,107,0;
 }
