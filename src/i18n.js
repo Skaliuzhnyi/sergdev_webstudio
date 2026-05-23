@@ -4,11 +4,11 @@ import { initReactI18next } from 'react-i18next'
 const uk = {
   nav: { about:'Про мене', services:'Послуги', portfolio:'Портфоліо', process:'Процес', faq:'FAQ', contact:'Контакт', cta:'Найняти мене' },
   hero: {
-    tag:'Доступний для проектів · Bad Camberg, DE',
+    tag:'Доступний для проектів',
     l1:'Ваш сайт повинен', l2:'приводити клієнтів', l3:'а не лише виглядати.',
     sub:'Розробляю сайти та веб-застосунки, які <b>продають за вас</b> — поки ви займаєтесь бізнесом.',
     cta1:'Безкоштовна консультація', cta2:'Переглянути роботи',
-    c1:'Готово за 2–4 тижні', c2:'Більше заявок з першого дня', c3:'Прозорі ціни, без сюрпризів',
+    c1:'Готово за 1–2 тижні', c2:'Більше заявок з першого дня', c3:'Прозорі ціни, без сюрпризів',
     s1:'Проектів', s2:'Роки досвіду', s3:'Задоволених клієнтів',
   },
   problem: {
@@ -128,11 +128,11 @@ const uk = {
 const de = {
   nav: { about:'Über mich', services:'Leistungen', portfolio:'Portfolio', process:'Prozess', faq:'FAQ', contact:'Kontakt', cta:'Jetzt anfragen' },
   hero: {
-    tag:'Verfügbar für Projekte · Bad Camberg, DE',
+    tag:'Verfügbar für Projekte',
     l1:'Ihre Website soll', l2:'Kunden bringen', l3:'nicht nur gut aussehen.',
     sub:'Ich entwickle Websites und Apps, die <b>für Sie verkaufen</b> — während Sie Ihr Business führen.',
     cta1:'Kostenloses Erstgespräch', cta2:'Portfolio ansehen',
-    c1:'Fertig in 2–4 Wochen', c2:'Mehr Anfragen ab Tag 1', c3:'Feste Preise, keine Überraschungen',
+    c1:'Fertig in 1–2 Wochen', c2:'Mehr Anfragen ab Tag 1', c3:'Feste Preise, keine Überraschungen',
     s1:'Projekte', s2:'Jahre Erfahrung', s3:'Zufriedene Kunden',
   },
   problem: {
@@ -252,11 +252,11 @@ const de = {
 const en = {
   nav: { about:'About', services:'Services', portfolio:'Portfolio', process:'Process', faq:'FAQ', contact:'Contact', cta:'Hire me' },
   hero: {
-    tag:'Available for projects · Bad Camberg, DE',
+    tag:'Available for projects',
     l1:'Your website should', l2:'bring clients', l3:'not just look good.',
     sub:'I build websites and apps that <b>sell for you</b> — while you run your business.',
     cta1:'Free discovery call', cta2:'View my work',
-    c1:'Delivered in 2–4 weeks', c2:'More leads from day one', c3:'Fixed price, no surprises',
+    c1:'Delivered in 1–2 weeks', c2:'More leads from day one', c3:'Fixed price, no surprises',
     s1:'Projects', s2:'Years experience', s3:'Happy clients',
   },
   problem: {

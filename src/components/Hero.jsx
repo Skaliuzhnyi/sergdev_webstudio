@@ -34,8 +34,8 @@ export default function Hero() {
     { icon: '🔒', label: t('hero.c3') },
   ]
   const stats = [
-    { end: 22,  suffix: '+', label: t('hero.s1') },
-    { end: 3,   suffix: '+', label: t('hero.s2') },
+    { end: 37,  suffix: '+', label: t('hero.s1') },
+    { end: 4,   suffix: '+', label: t('hero.s2') },
     { end: 100, suffix: '%', label: t('hero.s3') },
   ]
 
@@ -129,7 +129,7 @@ export default function Hero() {
               initial={{ opacity:0, scale:.9 }}
               animate={{ opacity:1, scale:1 }}
               transition={{ delay:.65+i*.07, ease }}
-              style={{ display:'inline-flex', alignItems:'center', gap:'.35rem', background:'var(--bg3)', border:'1px solid var(--border)', borderRadius:999, padding:'.28rem .8rem', fontSize:'.78rem', color:'var(--text2)' }}>
+              style={{ display:'inline-flex', alignItems:'center', gap:'.5rem', background:'var(--bg3)', border:'1px solid var(--border)', borderRadius:999, padding:'.28rem .8rem', fontSize:'.78rem', color:'var(--text2)' }}>
               {c.icon} {c.label}
             </motion.span>
           ))}
