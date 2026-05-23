@@ -15,7 +15,7 @@ const uk = {
     label:'Проблема',
     title:'Ваш сайт щодня коштує вам клієнтів — і ви цього не помічаєте',
     scenario:'Уявіть: клієнт шукає вашу послугу прямо зараз. Знаходить ваш сайт. Він завантажується 6 секунд. На смартфоні все «розповзається». Він закриває вкладку — і замовляє у конкурента.',
-    close:'Не поганий продукт. Не поганий сервіс.<br>Просто <em>сайт, який заважає вам рости.</em>',
+    close:'Не поганий продукт.<br> Не поганий сервіс.<br>Просто <em>сайт, який заважає вам рости.</em>',
     items: [
       { s:'Сайт завантажується повільно', t:'Кожна зайва секунда — мінус 7% конверсії. Клієнти не чекають.' },
       { s:'Зламаний мобільний вигляд', t:'60%+ відвідувачів — зі смартфону. Якщо верстка «їде» — вони йдуть.' },
@@ -139,7 +139,7 @@ const de = {
     label:'Das Problem',
     title:'Ihr Auftritt kostet Sie täglich Kunden — und Sie merken es nicht.',
     scenario:'Stellen Sie sich vor: Ein Kunde sucht nach Ihrer Dienstleistung. Er findet Ihre Website. 6 Sekunden Ladezeit. Auf dem Smartphone kaputt. Er bucht beim Konkurrenten.',
-    close:'Kein schlechtes Produkt. Kein schlechter Service.<br><em>Nur eine Website, die Ihnen im Weg steht.</em>',
+    close:'Kein schlechtes Produkt.<br> Kein schlechter Service.<br><em>Nur eine Website, die Ihnen im Weg steht.</em>',
     items: [
       { s:'Langsame Ladezeit', t:'Jede Sekunde kostet 7% Konversion. Kunden warten nicht.' },
       { s:'Kaputtes mobiles Design', t:'60%+ kommen vom Smartphone. Sieht es schlecht aus, springen sie ab.' },
@@ -263,7 +263,7 @@ const en = {
     label:'The Problem',
     title:'Your website costs you clients every day — and you don\'t notice.',
     scenario:'Picture this: a client searches for your service right now. Finds your site. 6 seconds to load. Broken on mobile. They leave — and hire your competitor.',
-    close:'Not a bad product. Not a bad service.<br><em>Just a website standing between you and growth.</em>',
+    close:'Not a bad product.<br> Not a bad service.<br><em>Just a website standing between you and growth.</em>',
     items: [
       { s:'Slow loading speed', t:'Every extra second costs 7% of conversions. Clients don\'t wait.' },
       { s:'Broken mobile experience', t:'60%+ visit from smartphones. Broken layout = they leave immediately.' },
