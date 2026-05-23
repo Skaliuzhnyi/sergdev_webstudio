@@ -14,7 +14,7 @@ export default function ContactForm() {
     e.preventDefault()
     if (status === 'sending') return
     setStatus('sending')
-    if (FORMSPREE_ID === 'mgoqyaov') {
+    if (FORMSPREE_ID === 'YOUR_FORM_ID') {
       await new Promise(r => setTimeout(r, 1200))
       setStatus('ok')
       setTimeout(() => { setStatus('idle'); setForm({ name:'', email:'', subject:'', message:'' }) }, 4000)
@@ -39,7 +39,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={submit} style={{ background:'var(--surface)', border:'1px solid var(--border)', borderRadius:'var(--rxl)', padding:'2.5rem' }}>
       <h2 style={{ fontFamily:"'Syne',sans-serif", fontSize:'1.25rem', fontWeight:700, marginBottom:'1.5rem', color:'var(--text)' }}>{t('form.title')}</h2>
-      {FORMSPREE_ID === 'mgoqyaov' && (
+      {FORMSPREE_ID === 'YOUR_FORM_ID' && (
         <div style={{ background:'var(--bg3)', border:'1px solid var(--border)', borderRadius:'var(--r)', padding:'.75rem 1rem', marginBottom:'1.25rem', fontSize:'.78rem', color:'var(--text2)', display:'flex', gap:'.5rem', lineHeight:1.55 }}>
           ⚙️ <span>Replace <code style={{ background:'var(--bg2)', padding:'1px 5px', borderRadius:4 }}>YOUR_FORM_ID</code> in <b>ContactForm.jsx</b> → <a href="https://formspree.io" target="_blank" style={{ color:'var(--accent)' }}>formspree.io</a></span>
         </div>
