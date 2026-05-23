@@ -373,11 +373,33 @@ const en = {
   footer: { copy:'© 2026 Serhii Kaliuzhnyi — Fullstack Developer' },
 }
 
+// --- helpers ---
+const getInitialLang = () => {
+  if (typeof window === 'undefined') return 'uk'
+  return localStorage.getItem('sk_lang') || 'uk'
+}
+
+// --- translations ---
+const resources = {
+  uk: { translation: uk },
+  de: { translation: de },
+  en: { translation: en },
+}
+
+// --- init ---
+
 i18n.use(initReactI18next).init({
-  resources: { uk: { translation: uk }, de: { translation: de }, en: { translation: en } },
-  lng: typeof window !== 'undefined' ? (localStorage.getItem('sk_lang') || 'uk') : 'uk',
+  resources,
+  lng: getInitialLang(),
   fallbackLng: 'uk',
-  interpolation: { escapeValue: false },
+
+  interpolation: {
+    escapeValue: false,
+  },
+
+  react: {
+    useSuspense: false, // удобно для Next.js / SSR
+  },
 })
 
 export default i18n
