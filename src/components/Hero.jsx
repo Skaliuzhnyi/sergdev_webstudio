@@ -19,14 +19,14 @@ export default function Hero() {
   /* ─── Responsive h1 sizing that fits 1 screen ───────────────────────
      Goal: 3 lines, no overflow on any common viewport.
      Latin (Syne) is narrower → can be bigger.
-     Cyrillic (Manrope) chars are wider → smaller.
+     Cyrillic (Unbounded) chars are wider → smaller.
      Formula: clamp(min, viewport%, max)
      Tested breakpoints: 320px / 375px / 414px / 768px / 1280px+
   ─────────────────────────────────────────────────────────────────── */
   const h1Size  = isUk ? 'clamp(2.25rem, 6.5vw, 5.5rem)' : 'clamp(2.5rem, 7.5vw, 6.5rem)'
   const h1Lead  = isUk ? 1.08 : 1.0
   const h1Track = isUk ? '-.025em' : '-.048em'
-  const h1Font  = isUk ? "'Manrope', sans-serif" : "'Syne', sans-serif"
+  const h1Font  = isUk ? "'Unbounded', sans-serif" : "'Syne', sans-serif"
 
   const chips = [
     { icon: '⚡', label: t('hero.c1') },
@@ -143,7 +143,7 @@ export default function Hero() {
               animate={{ opacity:1, y:0 }}
               transition={{ delay:.78+i*.11, ease }}
               style={{ position:'relative', paddingBottom:10 }}>
-              <div style={{ fontFamily: isUk ? "'Manrope',sans-serif" : "'Syne',sans-serif", fontSize:'clamp(1.625rem,3.5vw,2.25rem)', fontWeight:800, lineHeight:1 }}>
+              <div style={{ fontFamily: isUk ? "'Unbounded',sans-serif" : "'Syne',sans-serif", fontSize:'clamp(1.625rem,3.5vw,2.25rem)', fontWeight:800, lineHeight:1 }}>
                 {counted
                   ? <CountUp end={s.end} duration={1.6} delay={i*0.14} suffix={s.suffix}/>
                   : `0${s.suffix}`}
