@@ -54,7 +54,7 @@ export default function Nav() {
 
           {/* Logo */}
           <Link to="/" style={{ fontFamily: lang==='uk' ? "'Manrope',sans-serif" : "'Syne',sans-serif", fontWeight:800, fontSize:'1.125rem', letterSpacing:'-.04em', color:'var(--text)' }}>
-            SK<span style={{ color:'var(--accent)' }}>.</span>
+            SergDev<span style={{ color:'var(--accent)' }}></span>
           </Link>
 
           {/* Desktop nav */}
