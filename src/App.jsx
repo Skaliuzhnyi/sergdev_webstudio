@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import FloatCta from './components/FloatCta'
@@ -27,6 +28,7 @@ export default function App() {
       </Routes>
       <Footer />
       <FloatCta />
+      <Analytics />
     </>
   )
 }
