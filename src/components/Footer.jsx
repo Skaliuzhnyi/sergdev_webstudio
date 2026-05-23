@@ -5,7 +5,8 @@ export default function Footer() {
   const { t } = useTranslation()
   const links = [
     { label:'Email', href:'mailto:flskaliuzhnyi@gmail.com', external:false },
-    { label:'Telegram', href:'https://t.me/sergkdev', external:true },
+    { label:'Telegram', href:'https://t.me/sergkDev', external:true },
+    { label:'WhatsApp', href:'https://wa.me/380673093444', external:true },
   ]
   return (
     <footer>
