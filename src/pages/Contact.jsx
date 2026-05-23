@@ -4,6 +4,9 @@ import { motion } from 'framer-motion'
 import { FadeUp, FadeLeft, FadeRight } from '../components/Animate'
 import { SectionLabel } from '../components/Section'
 import ContactForm from '../components/ContactForm'
+import whatsApp from '@/images/icons/social/whatsapp.png'
+import tg from '@/images/icons/social/tg.png'
+import mail from '@/images/icons/social/mail.png'
 
 const SEO_META = {
   uk: { title: 'Контакт — Обговорити проект | Serhii Kaliuzhnyi', desc: "Зв'яжіться для безкоштовної консультації. Відповідаю протягом кількох годин." },
@@ -19,8 +22,9 @@ const PROCESS_MINI = {
 
 // Only Email and Telegram — no GitHub/LinkedIn per requirements
 const LINKS = [
-  { icon: '✉️', label: 'Email', val: 'flskaliuzhnyi@gmail.com', href: 'mailto:flskaliuzhnyi@gmail.com' },
-  { icon: '✈️', label: 'Telegram', val: '@sergkdev', href: 'https://t.me/sergkdev' },
+  { icon: <img src={mail} />, label: 'Email', val: 'flskaliuzhnyi@gmail.com', href: 'mailto:flskaliuzhnyi@gmail.com' },
+  { icon: <img src={tg} />, label: 'Telegram', val: '@sergkdev', href: 'https://t.me/sergkDev' },
+  { icon: <img src={whatsApp} />, label: 'WhatsApp', val: '@sergkdev', href: 'https://wa.me/380673093444' },
 ]
 
 const AVAIL = {
@@ -88,7 +92,7 @@ export default function Contact() {
                 </div>
               </FadeLeft>
 
-              {/* Contact links — Email + Telegram only */}
+              {/* Contact links — Email + Telegram + WhatsApp only */}
               <FadeLeft delay={0.05}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '.875rem', marginBottom: '2.5rem' }}>
                   {LINKS.map((l, i) => (
@@ -97,7 +101,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       whileHover={{ x: 5, borderColor: 'var(--accent)' }}
                       style={{ display: 'flex', alignItems: 'center', gap: '1.125rem', padding: '1rem 1.25rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--r)', transition: 'border-color .2s' }}>
-                      <div style={{ width: 44, height: 44, background: 'var(--accent-dim)', border: '1px solid rgba(var(--accent-rgb),.18)', borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', flexShrink: 0 }}>
+                      <div style={{ width: 44, height: 44, padding: '4px', background: 'var(--accent-dim)', border: '1px solid rgba(var(--accent-rgb),.18)', borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', flexShrink: 0 }}>
                         {l.icon}
                       </div>
                       <div>
