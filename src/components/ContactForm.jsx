@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 
-const FORMSPREE_ID = 'mgoqyaov'
+const FORMSPREE_ID = 'xlgvlyog'
 
 export default function ContactForm() {
   const { t } = useTranslation()
