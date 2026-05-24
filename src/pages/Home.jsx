@@ -27,7 +27,7 @@ export default function Home() {
       <Helmet>
         <title>{m.title}</title>
         <meta name="description" content={m.desc} />
-        <link rel="canonical" href="https://sergdev-webstudio.vercel.app/" />
+        <link rel="canonical" href="https://sergdev.website/" />
       </Helmet>
       <main>
         <Hero />

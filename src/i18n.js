@@ -403,3 +403,46 @@ i18n.use(initReactI18next).init({
 })
 
 export default i18n
+
+
+/*Language detection priority ──────────────────────────────────
+   1. User manually picked a lang → saved in localStorage → use it
+2. Browser / OS language (navigator.languages or navigator.language)
+3. Fallback: 'uk'
+
+Mapping:
+  de, de-AT, de-CH, de-DE, … → 'de'
+uk, uk-UA                  → 'uk'
+anything else              → 'en'
+────────────────────────────────────────────────────────────────*/
+/*
+function detectLang() {
+  // 1. User preference
+  const saved = typeof window !== 'undefined' && localStorage.getItem('sk_lang')
+  if (saved && ['uk','de','en'].includes(saved)) return saved
+
+  // 2. Browser language list (most specific first)
+  const langs = typeof window !== 'undefined'
+    ? (navigator.languages?.length ? navigator.languages : [navigator.language])
+    : []
+
+  for (const l of langs) {
+    const code = l.toLowerCase()
+    if (code.startsWith('de')) return 'de'
+    if (code.startsWith('uk')) return 'uk'
+    if (code.startsWith('ru') || code.startsWith('be') || code.startsWith('pl')) return 'uk'
+  }
+
+  // 3. Fallback
+  return 'en'
+}
+
+i18n.use(initReactI18next).init({
+  resources: { uk: { translation: uk }, de: { translation: de }, en: { translation: en } },
+  lng: detectLang(),
+  fallbackLng: 'uk',
+  interpolation: { escapeValue: false },
+})
+
+export default i18n
+*/

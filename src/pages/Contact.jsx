@@ -45,7 +45,7 @@ export default function Contact() {
       <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.desc} />
-        <link rel="canonical" href="https://skaliuzhnyi.dev/contact" />
+        <link rel="canonical" href="https://sergdev.website/contact" />
       </Helmet>
 
       {/* Hero */}

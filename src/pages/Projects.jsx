@@ -23,7 +23,7 @@ export default function Projects() {
       <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.desc} />
-        <link rel="canonical" href="https://skaliuzhnyi.dev/projects" />
+        <link rel="canonical" href="https://sergdev.website/projects" />
       </Helmet>
 
       {/* Hero */}
