@@ -29,7 +29,7 @@ export default function Solution() {
               <motion.div initial={{ scaleX:0 }} whileHover={{ scaleX:1 }}
                 style={{ position:'absolute', bottom:0, left:0, right:0, height:2, background:'var(--accent)', transformOrigin:'left', transition:'transform .35s' }}/>
               <div style={{ marginBottom:'1.25rem', background:'var(--accent)', padding: '5px',width: 'fit-content', borderRadius:'20%'}}>
-                <img src={ICONS[i]} alt="" width={32} height={32} />
+                <img src={ICONS[i]} alt="" width={32} height={32} loading="lazy"/>
               </div>
               <div style={{ fontFamily:"'Syne',sans-serif", fontSize:'1.0625rem', fontWeight:700, marginBottom:'.625rem', color:'var(--text)' }}>{s.t}</div>
               <div style={{ fontSize:'.875rem', color:'var(--text2)', lineHeight:1.7, marginBottom:'1rem' }}>{s.d}</div>

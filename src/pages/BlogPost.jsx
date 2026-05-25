@@ -236,7 +236,7 @@ export default function BlogPost() {
                   {/* Author card */}
                   <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--rl)', padding: '1.5rem', marginBottom: '1.5rem', display: isMobile ? 'none' : 'block' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '.875rem', marginBottom: '1rem' }}>
-                      <img src="https://skaliuzhnyi.github.io/cv/img/profile-img.jpg" alt="Serhii Kaliuzhnyi"
+                      <img src="https://skaliuzhnyi.github.io/cv/img/profile-img.jpg" alt="Serhii Kaliuzhnyi" loading="lazy"
                            style={{ width: 52, height: 52, borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--border2)', flexShrink: 0 }}
                            onError={e => { e.currentTarget.style.display = 'none' }} />
                       <div>

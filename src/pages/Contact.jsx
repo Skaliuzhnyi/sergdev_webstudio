@@ -23,9 +23,9 @@ const PROCESS_MINI = {
 
 // Only Email and Telegram — no GitHub/LinkedIn per requirements
 const LINKS = [
-  { icon: <img src={mail} />, label: 'Email', val: 'info@sergdev.website', href: 'mailto:info@sergdev.website' },
-  { icon: <img src={tg} />, label: 'Telegram', val: '@sergkdev', href: 'https://t.me/sergkDev' },
-  { icon: <img src={whatsApp} />, label: 'WhatsApp', val: '@sergkdev', href: 'https://wa.me/380673093444' },
+  { icon: <img src={mail} loading="lazy" />, label: 'Email', val: 'info@sergdev.website', href: 'mailto:info@sergdev.website' },
+  { icon: <img src={tg} loading="lazy" />, label: 'Telegram', val: '@sergkdev', href: 'https://t.me/sergkDev' },
+  { icon: <img src={whatsApp} loading="lazy" />, label: 'WhatsApp', val: '@sergkdev', href: 'https://wa.me/380673093444' },
 ]
 
 const AVAIL = {
