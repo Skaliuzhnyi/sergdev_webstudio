@@ -2,7 +2,7 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
 const uk = {
-  nav: { about:'Про мене', services:'Послуги', portfolio:'Портфоліо', process:'Процес', faq:'FAQ', contact:'Контакт', cta:'Найняти мене' },
+  nav: { about:'Про мене', services:'Послуги', portfolio:'Портфоліо', blog:'Блог', process:'Процес', faq:'FAQ', contact:'Контакт', cta:'Найняти мене' },
   hero: {
     tag:'Доступний для проектів',
     l1:'Ваш сайт повинен', l2:'приводити клієнтів', l3:'а не лише виглядати.',
@@ -126,7 +126,7 @@ const uk = {
 }
 
 const de = {
-  nav: { about:'Über mich', services:'Leistungen', portfolio:'Portfolio', process:'Prozess', faq:'FAQ', contact:'Kontakt', cta:'Jetzt anfragen' },
+  nav: { about:'Über mich', services:'Leistungen', portfolio:'Portfolio', blog:'Blog', process:'Prozess', faq:'FAQ', contact:'Kontakt', cta:'Jetzt anfragen' },
   hero: {
     tag:'Verfügbar für Projekte',
     l1:'Ihre Website soll', l2:'Kunden bringen', l3:'nicht nur gut aussehen.',
@@ -250,7 +250,7 @@ const de = {
 }
 
 const en = {
-  nav: { about:'About', services:'Services', portfolio:'Portfolio', process:'Process', faq:'FAQ', contact:'Contact', cta:'Hire me' },
+  nav: { about:'About', services:'Services', portfolio:'Portfolio', blog:'Blog', process:'Process', faq:'FAQ', contact:'Contact', cta:'Hire me' },
   hero: {
     tag:'Available for projects',
     l1:'Your website should', l2:'bring clients', l3:'not just look good.',

@@ -7,6 +7,8 @@ import Footer from './components/Footer'
 import FloatCta from './components/FloatCta'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
@@ -24,6 +26,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

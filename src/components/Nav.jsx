@@ -67,6 +67,7 @@ export default function Nav() {
               </button>
             ))}
             <Link to="/projects" style={{ fontSize:'.875rem', color: location.pathname==='/projects' ? 'var(--accent)' : 'var(--text2)', transition:'color .2s' }}>{t('nav.portfolio')}</Link>
+            <Link to="/blog" style={{ fontSize:'.875rem', color: location.pathname==='/blog' ? 'var(--accent)' : 'var(--text2)', transition:'color .2s' }}>{t('nav.blog')}</Link>
             {['process','faq'].map(id => (
               <button key={id} onClick={() => goto(id)} style={{ fontSize:'.875rem', color:'var(--text2)', transition:'color .2s', background:'none', border:'none', cursor:'pointer', fontFamily:'var(--fb)', padding:0 }}
                 onMouseEnter={e => e.currentTarget.style.color='var(--text)'}
