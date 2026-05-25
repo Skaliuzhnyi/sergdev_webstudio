@@ -79,6 +79,7 @@ export default function BlogPost() {
       { day: 'numeric', month: 'long', year: 'numeric' }
     )
 
+  const isMobile = window.innerWidth <= 768
   const title = post.title[lang] || post.title.uk
   const excerpt = post.excerpt[lang] || post.excerpt.uk
   const body = post.body[lang] || post.body.uk
@@ -157,7 +158,9 @@ export default function BlogPost() {
 
       <article style={{ paddingTop: post.cover ? '3rem' : 'calc(var(--nav) + 4rem)', paddingBottom: '6rem' }}>
         <div className="wrap" style={{ maxWidth: 1240 }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr clamp(240px,28%,320px)', gap: '4rem', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: isMobile
+              ? '1fr'
+              : '1fr clamp(240px,28%,320px)', gap: '4rem', alignItems: 'start' }}>
 
             {/* ── MAIN CONTENT ── */}
             <div>
@@ -225,42 +228,43 @@ export default function BlogPost() {
             </div>
 
             {/* ── SIDEBAR ── */}
-            <aside style={{ position: 'sticky', top: 'calc(var(--nav) + 2rem)' }}>
-              <FadeUp delay={0.15}>
-                {/* Author card */}
-                <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--rl)', padding: '1.5rem', marginBottom: '1.5rem' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '.875rem', marginBottom: '1rem' }}>
-                    <img src="https://skaliuzhnyi.github.io/cv/img/profile-img.jpg" alt="Serhii Kaliuzhnyi"
-                      style={{ width: 52, height: 52, borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--border2)', flexShrink: 0 }}
-                      onError={e => { e.currentTarget.style.display = 'none' }} />
-                    <div>
-                      <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: '.9375rem', color: 'var(--text)' }}>Serhii Kaliuzhnyi</div>
-                      <div style={{ fontSize: '.8rem', color: 'var(--text3)', marginTop: '.15rem' }}>Fullstack Developer</div>
+            <aside style={{ position: isMobile ? 'static' : 'sticky',
+              top: isMobile ? 'auto' : 'calc(var(--nav) + 2rem)', width: '100%'}}>
+                <FadeUp delay={0.15}>
+                  {/* Author card */}
+                  <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--rl)', padding: '1.5rem', marginBottom: '1.5rem', display: isMobile ? 'none' : 'block' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '.875rem', marginBottom: '1rem' }}>
+                      <img src="https://skaliuzhnyi.github.io/cv/img/profile-img.jpg" alt="Serhii Kaliuzhnyi"
+                           style={{ width: 52, height: 52, borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--border2)', flexShrink: 0 }}
+                           onError={e => { e.currentTarget.style.display = 'none' }} />
+                      <div>
+                        <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: '.9375rem', color: 'var(--text)' }}>Serhii Kaliuzhnyi</div>
+                        <div style={{ fontSize: '.8rem', color: 'var(--text3)', marginTop: '.15rem' }}>Fullstack Developer</div>
+                      </div>
                     </div>
+                    <p style={{ fontSize: '.875rem', color: 'var(--text2)', lineHeight: 1.65, marginBottom: '1rem' }}>
+                      {lang === 'uk' && 'Роблю сайти та застосунки що приводять клієнтів.'}
+                      {lang === 'de' && 'Ich baue Websites und Apps, die Kunden bringen.'}
+                      {lang === 'en' && 'I build websites and apps that bring clients.'}
+                    </p>
+                    <Link to="/contact" className="btn ba" style={{ width: '100%', justifyContent: 'center', fontSize: '.875rem', padding: '10px 16px' }}>
+                      {ctaBtn}
+                    </Link>
                   </div>
-                  <p style={{ fontSize: '.875rem', color: 'var(--text2)', lineHeight: 1.65, marginBottom: '1rem' }}>
-                    {lang === 'uk' && 'Роблю сайти та застосунки що приводять клієнтів.'}
-                    {lang === 'de' && 'Ich baue Websites und Apps, die Kunden bringen.'}
-                    {lang === 'en' && 'I build websites and apps that bring clients.'}
-                  </p>
-                  <Link to="/contact" className="btn ba" style={{ width: '100%', justifyContent: 'center', fontSize: '.875rem', padding: '10px 16px' }}>
-                    {ctaBtn}
-                  </Link>
-                </div>
 
-                {/* Related posts */}
-                {related.length > 0 && (
-                  <div>
-                    <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: '.875rem', color: 'var(--text2)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: '1rem' }}>
-                      {relatedLabel}
+                  {/* Related posts */}
+                  {related.length > 0 && (
+                    <div>
+                      <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: '.875rem', color: 'var(--text2)', letterSpacing: '.08em', textTransform: 'uppercase', marginBottom: '1rem' }}>
+                        {relatedLabel}
+                      </div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '.75rem' }}>
+                        {related.map(p => <RelatedCard key={p.slug} post={p} />)}
+                      </div>
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '.75rem' }}>
-                      {related.map(p => <RelatedCard key={p.slug} post={p} />)}
-                    </div>
-                  </div>
-                )}
-              </FadeUp>
-            </aside>
+                  )}
+                </FadeUp>
+              </aside>
           </div>
         </div>
       </article>
