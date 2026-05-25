@@ -125,6 +125,7 @@ export default function Nav() {
                 {t(`nav.${id}`)}
               </button>
             ))}
+            <Link to="/blog" onClick={() => setOpen(false)} style={{ fontSize:'1.5rem', fontFamily: lang==='uk'?"'Manrope',sans-serif":"'Syne',sans-serif", fontWeight:700, color:'var(--text2)' }}>{t('nav.blog')}</Link>
             <Link to="/contact" onClick={() => setOpen(false)} style={{ fontSize:'1.5rem', fontFamily: lang==='uk'?"'Manrope',sans-serif":"'Syne',sans-serif", fontWeight:700, color:'var(--text2)' }}>{t('nav.contact')}</Link>
             <Link to="/contact" onClick={() => setOpen(false)} style={{ background:'var(--accent)', color:'#000', fontWeight:700, padding:'14px 24px', borderRadius:10, textAlign:'center', marginTop:'1rem', fontSize:'1rem' }}>
               {t('nav.cta')}

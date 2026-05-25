@@ -21,6 +21,11 @@ export default function Footer() {
               {l.label}
             </a>
           ))}
+          <Link to="/blog" style={{ fontSize:'.875rem', color:'var(--text3)', transition:'color .2s' }}
+                onMouseEnter={e => e.currentTarget.style.color='var(--text)'}
+                onMouseLeave={e => e.currentTarget.style.color='var(--text3)'}>
+            {t('nav.blog')}
+          </Link>
           <Link to="/contact" style={{ fontSize:'.875rem', color:'var(--text3)', transition:'color .2s' }}
             onMouseEnter={e => e.currentTarget.style.color='var(--text)'}
             onMouseLeave={e => e.currentTarget.style.color='var(--text3)'}>
