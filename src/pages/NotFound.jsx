@@ -12,6 +12,8 @@ export default function NotFound() {
     en:{ h:"Page not found", s:"This page doesn't exist or has moved.", b:'← Back to Home' },
   }
   const d = data[lang] || data.uk
+  const isUk = i18n.language === 'uk'
+
   return (
     <>
       <Helmet><title>404 | Serhii Kaliuzhnyi</title></Helmet>
@@ -23,7 +25,7 @@ export default function NotFound() {
             style={{ fontFamily:"'Syne',sans-serif", fontSize:'clamp(6rem,20vw,14rem)', fontWeight:800, lineHeight:.9, letterSpacing:'-.05em', color:'var(--border2)', marginBottom:'1.5rem', userSelect:'none' }}>
             4<span style={{ color:'var(--accent)' }}>0</span>4
           </motion.div>
-          <h1 style={{ fontFamily: lang==='uk' ? "'Manrope',sans-serif" : "'Syne',sans-serif", fontSize:'clamp(1.5rem,4vw,2.5rem)', fontWeight:800, letterSpacing:'-.03em', marginBottom:'1rem', color:'var(--text)' }}>{d.h}</h1>
+          <h1 style={{ fontFamily:isUk ? "'Unbounded', sans-serif" : "'Syne', sans-serif", fontSize:'clamp(1.5rem,4vw,2.5rem)', fontWeight:800, letterSpacing:'-.03em', marginBottom:'1rem', color:'var(--text)' }}>{d.h}</h1>
           <p style={{ color:'var(--text2)', fontSize:'1rem', lineHeight:1.75, maxWidth:400, margin:'0 auto 2.5rem' }}>{d.s}</p>
           <Link to="/" className="btn ba">{d.b}</Link>
           <div style={{ display:'flex', justifyContent:'center', gap:'1rem', marginTop:'2rem', flexWrap:'wrap' }}>
