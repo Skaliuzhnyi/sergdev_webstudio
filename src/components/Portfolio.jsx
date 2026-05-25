@@ -83,7 +83,7 @@ export default function Portfolio({ limit = 3 }) {
         </StaggerContainer>
         {limit && (
           <div style={{ textAlign:'center', marginTop:'3rem' }}>
-            <Link to="/projects" className="btn bg">{t('portfolio.all')}</Link>
+            <Link to="/projects" className="btn bg" aria-label={t('portfolio.all')}>{t('portfolio.all')}</Link>
           </div>
         )}
       </div>

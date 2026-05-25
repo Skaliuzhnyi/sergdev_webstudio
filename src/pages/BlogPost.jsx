@@ -224,7 +224,7 @@ export default function BlogPost() {
                     {lang === 'de' && 'Kostenloses Website-Audit oder Beratung — ich antworte innerhalb weniger Stunden.'}
                     {lang === 'en' && 'Free website audit or consultation — I respond within a few hours.'}
                   </p>
-                  <Link to="/contact" className="btn ba">{ctaBtn}</Link>
+                  <Link to="/contact" className="btn ba" aria-label={ctaBtn}>{ctaBtn}</Link>
                 </div>
               </FadeUp>
             </div>
@@ -249,7 +249,7 @@ export default function BlogPost() {
                       {lang === 'de' && 'Ich baue Websites und Apps, die Kunden bringen.'}
                       {lang === 'en' && 'I build websites and apps that bring clients.'}
                     </p>
-                    <Link to="/contact" className="btn ba" style={{ width: '100%', justifyContent: 'center', fontSize: '.875rem', padding: '10px 16px' }}>
+                    <Link to="/contact" className="btn ba" aria-label={ctaBtn} style={{ width: '100%', justifyContent: 'center', fontSize: '.875rem', padding: '10px 16px' }}>
                       {ctaBtn}
                     </Link>
                   </div>

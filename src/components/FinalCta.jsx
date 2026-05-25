@@ -33,8 +33,8 @@ export default function FinalCta() {
           </FadeUp>
           <FadeUp delay={0.15}>
             <div style={{ display:'flex', gap:'1rem', justifyContent:'center', flexWrap:'wrap', marginBottom:'1.25rem' }}>
-              <Link to="/contact" className="btn ba">{t('fcta.cta1')}</Link>
-              <Link to="/projects" className="btn bg">{t('fcta.cta2')}</Link>
+              <Link to="/contact" className="btn ba" aria-label={f('fcta.cta1')}>{t('fcta.cta1')}</Link>
+              <Link to="/projects" className="btn bg" aria-label={f('fcta.cta2')}>{t('fcta.cta2')}</Link>
             </div>
           </FadeUp>
           <FadeUp delay={0.2}><p style={{ fontSize:'.875rem', color:'var(--text3)', marginBottom:'1rem' }}>{t('fcta.note')}</p></FadeUp>

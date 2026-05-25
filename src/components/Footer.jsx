@@ -14,19 +14,19 @@ export default function Footer() {
         <span style={{ fontSize:'.875rem', color:'var(--text3)' }}>{t('footer.copy')}</span>
         <div style={{ display:'flex', gap:'1.5rem', flexWrap:'wrap', alignItems:'center' }}>
           {links.map(l => (
-            <a key={l.label} href={l.href} target={l.external ? '_blank' : '_self'} rel="noopener noreferrer"
+            <a key={l.label} href={l.href} target={l.external ? '_blank' : '_self'} aria-label={l.label} rel="noopener noreferrer"
               style={{ fontSize:'.875rem', color:'var(--text3)', transition:'color .2s' }}
               onMouseEnter={e => e.currentTarget.style.color='var(--text)'}
               onMouseLeave={e => e.currentTarget.style.color='var(--text3)'}>
               {l.label}
             </a>
           ))}
-          <Link to="/blog" style={{ fontSize:'.875rem', color:'var(--text3)', transition:'color .2s' }}
+          <Link to="/blog" aria-label={t('nav.blog')} style={{ fontSize:'.875rem', color:'var(--text3)', transition:'color .2s' }}
                 onMouseEnter={e => e.currentTarget.style.color='var(--text)'}
                 onMouseLeave={e => e.currentTarget.style.color='var(--text3)'}>
             {t('nav.blog')}
           </Link>
-          <Link to="/contact" style={{ fontSize:'.875rem', color:'var(--text3)', transition:'color .2s' }}
+          <Link to="/contact" aria-label={t('nav.contact')} style={{ fontSize:'.875rem', color:'var(--text3)', transition:'color .2s' }}
             onMouseEnter={e => e.currentTarget.style.color='var(--text)'}
             onMouseLeave={e => e.currentTarget.style.color='var(--text3)'}>
             {t('nav.contact')}

@@ -60,7 +60,7 @@ export default function Projects() {
             <p style={{ color:'var(--text2)', marginBottom:'2rem', fontSize:'1rem', fontStyle:'italic' }}>
               {t('portfolio.intro')}
             </p>
-            <Link to="/contact" className="btn ba">{t('hero.cta1')} →</Link>
+            <Link to="/contact" className="btn ba" aria-label={t('hero.cta1')}>{t('hero.cta1')} →</Link>
           </FadeUp>
         </div>
       </section>

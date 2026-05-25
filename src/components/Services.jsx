@@ -39,7 +39,7 @@ export default function Services() {
           ))}
         </StaggerContainer>
         <div style={{ textAlign:'center' }}>
-          <Link to="/contact" className="btn bg">{t('services.cta')}</Link>
+          <Link to="/contact" className="btn bg" aria-label={t('services.cta')}>{t('services.cta')}</Link>
         </div>
       </div>
     </section>

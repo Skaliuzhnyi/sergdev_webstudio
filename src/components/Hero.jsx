@@ -115,8 +115,8 @@ export default function Hero() {
           animate={{ opacity:1, y:0 }}
           transition={{ duration:.62, delay:.52, ease }}
           style={{ display:'flex', gap:'.875rem', flexWrap:'wrap', marginBottom:'clamp(1.5rem,3vw,2.5rem)' }}>
-          <Link to="/contact" className="btn ba">{t('hero.cta1')} →</Link>
-          <Link to="/projects" className="btn bg">{t('hero.cta2')}</Link>
+          <Link to="/contact" className="btn ba" aria-label={t('hero.cta1')}>{t('hero.cta1')} →</Link>
+          <Link to="/projects" className="btn bg" aria-label={t('hero.cta2')}>{t('hero.cta2')}</Link>
         </motion.div>
 
         {/* Chips */}

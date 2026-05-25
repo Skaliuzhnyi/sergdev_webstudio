@@ -29,7 +29,7 @@ export default function About() {
               </div>
             </FadeLeft>
             <FadeLeft delay={0.25}>
-              <Link to="/contact" className="btn ba">{t('about.cta')} →</Link>
+              <Link to="/contact" className="btn ba" aria-label={t('about.cta')}>{t('about.cta')} →</Link>
             </FadeLeft>
           </div>
 

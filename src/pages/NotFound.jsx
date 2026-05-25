@@ -27,7 +27,7 @@ export default function NotFound() {
           </motion.div>
           <h1 style={{ fontFamily:isUk ? "'Unbounded', sans-serif" : "'Syne', sans-serif", fontSize:'clamp(1.5rem,4vw,2.5rem)', fontWeight:800, letterSpacing:'-.03em', marginBottom:'1rem', color:'var(--text)' }}>{d.h}</h1>
           <p style={{ color:'var(--text2)', fontSize:'1rem', lineHeight:1.75, maxWidth:400, margin:'0 auto 2.5rem' }}>{d.s}</p>
-          <Link to="/" className="btn ba">{d.b}</Link>
+          <Link to="/" className="btn ba" aria-label={d.b}>{d.b}</Link>
           <div style={{ display:'flex', justifyContent:'center', gap:'1rem', marginTop:'2rem', flexWrap:'wrap' }}>
             {[[t('nav.portfolio'),'/projects'],[t('nav.contact'),'/contact']].map(([l,h]) => (
               <Link key={l} to={h} style={{ fontSize:'.875rem', color:'var(--text3)', padding:'.5rem 1rem', borderRadius:8, border:'1px solid var(--border)', transition:'all .2s' }}
