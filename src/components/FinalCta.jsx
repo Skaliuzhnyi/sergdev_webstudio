@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { FadeUp, ScaleIn } from './Animate'
+import i18n from "i18next";
 
 export default function FinalCta() {
   const { t } = useTranslation()
+  const isUk = i18n.language === 'uk'
+
   return (
     <section id="fcta" style={{ padding:'clamp(4.5rem,8vw,8rem) 0', position:'relative', overflow:'hidden' }}>
       <motion.div animate={{ scale:[1,1.08,1], opacity:[.05,.09,.05] }} transition={{ duration:6, repeat:Infinity }}
@@ -17,7 +20,7 @@ export default function FinalCta() {
             </span>
           </FadeUp>
           <FadeUp delay={0.05}>
-            <h2 style={{ fontFamily:"'Syne',sans-serif", fontSize:'clamp(1.875rem,4.5vw,3.5rem)', fontWeight:800, letterSpacing:'-.04em', lineHeight:1.08, marginBottom:'1.5rem' }}>
+            <h2 style={{ fontFamily: isUk ? "'Unbounded', sans-serif" : "'Syne', sans-serif", fontSize:'clamp(1.875rem,4.5vw,3.5rem)', fontWeight:800, letterSpacing:'-.04em', lineHeight:1.08, marginBottom:'1.5rem' }}>
               {t('fcta.title').split('\n').map((line, i) => (
                 <span key={i} style={{ display:'block', color: i===1 ? 'var(--accent)' : 'var(--text)' }}>{line}</span>
               ))}

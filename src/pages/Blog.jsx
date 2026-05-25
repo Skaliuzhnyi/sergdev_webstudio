@@ -34,7 +34,7 @@ function PostCard({ post, index }) {
   return (
     <motion.article
       variants={item}
-      whileHover={{ y: -6, borderColor: 'var(--border2)', boxShadow: '0 16px 48px rgba(0,0,0,.14)' }}
+      whileHover={{ y: -6, borderColor: 'var(--accent)', boxShadow: '0 16px 48px rgba(0,0,0,.14)' }}
       style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--rl)', overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color .2s' }}>
 
       {/* Cover image or gradient placeholder */}
@@ -99,6 +99,7 @@ export default function Blog() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language
   const meta = SEO[lang] || SEO.uk
+  const isUk = i18n.language === 'uk'
 
   return (
     <>
@@ -126,7 +127,7 @@ export default function Blog() {
             {lang === 'uk' ? 'Блог' : lang === 'de' ? 'Blog' : 'Blog'}
           </SectionLabel>
           <FadeUp delay={0.05}>
-            <h1 style={{ fontFamily: "'Syne', sans-serif", fontSize: 'clamp(2.5rem,5.5vw,4.5rem)', fontWeight: 800, letterSpacing: '-.04em', lineHeight: 1.06, marginBottom: '1rem', color: 'var(--text)' }}>
+            <h1 style={{ fontFamily:isUk ? "'Unbounded', sans-serif" : "'Syne', sans-serif", fontSize: 'clamp(2.5rem,5.5vw,4.5rem)', fontWeight: 800, letterSpacing: '-.04em', lineHeight: 1.06, marginBottom: '1rem', color: 'var(--text)' }}>
               {lang === 'uk' ? 'Корисне про веб' : lang === 'de' ? 'Wissenswertes über Web' : 'Web Knowledge'}
             </h1>
           </FadeUp>

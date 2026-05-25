@@ -15,10 +15,10 @@ export default function Process() {
         <div>
           {items.map((p, i) => (
             <FadeUp key={i} delay={i * 0.06}>
-              <motion.div whileHover={{ x:4 }}
-                style={{ display:'grid', gridTemplateColumns:'72px 1fr', gap:'2rem', alignItems:'start', padding:'2.25rem 0', borderBottom: i < items.length-1 ? '1px solid var(--border)' : 'none', transition:'all .2s', cursor:'default' }}>
-                <motion.div whileHover={{ color:'var(--accent)' }}
-                  style={{ fontFamily:"'Syne',sans-serif", fontSize:'3.25rem', fontWeight:800, color:'var(--border2)', lineHeight:1, transition:'color .35s' }}>
+              <motion.div className={'numberWrap'} whileHover={{ x:4 }}
+                style={{ display:'grid', gridTemplateColumns:'72px 1fr', gap:'5rem', alignItems:'start', padding:'2.25rem 0', borderBottom: i < items.length-1 ? '1px solid var(--border)' : 'none', transition:'all .2s', cursor:'default' }}>
+                <motion.div className="number" whileHover={{ color:'var(--accent)' }}
+                  style={{ fontFamily:"'Syne',sans-serif", fontSize:'4rem', fontWeight:800, color:'var(--border2)', lineHeight:1, transition:'color .35s' }}>
                   {p.n}
                 </motion.div>
                 <div>

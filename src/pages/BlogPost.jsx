@@ -90,6 +90,8 @@ export default function BlogPost() {
   const ctaTitle = lang === 'uk' ? 'Потрібна допомога з сайтом?' : lang === 'de' ? 'Brauchen Sie Hilfe mit Ihrer Website?' : 'Need help with your website?'
   const ctaBtn = lang === 'uk' ? 'Безкоштовна консультація →' : lang === 'de' ? 'Kostenlose Beratung →' : 'Free consultation →'
 
+  const isUk = i18n.language === 'uk'
+
   return (
     <>
       <Helmet>
@@ -187,7 +189,7 @@ export default function BlogPost() {
               {/* Title */}
               <FadeUp delay={0.07}>
                 <h1 style={{
-                  fontFamily: lang === 'uk' ? "'Manrope', sans-serif" : "'Syne', sans-serif",
+                  fontFamily: isUk ? "'Unbounded', sans-serif" : "'Syne', sans-serif",
                   fontSize: 'clamp(1.875rem,4vw,3rem)',
                   fontWeight: 800,
                   letterSpacing: lang === 'uk' ? '-.022em' : '-.038em',

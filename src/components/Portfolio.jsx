@@ -31,8 +31,8 @@ export function ProjectCard({ p }) {
   const [imgErr, setImgErr] = useState(false)
   return (
     <motion.article variants={item}
-      whileHover={{ y:-7, borderColor:'var(--border2)', boxShadow:'0 20px 50px rgba(0,0,0,.18)' }}
-      style={{ background:'var(--surface)', border:'1px solid var(--border)', borderRadius:'var(--rl)', overflow:'hidden', display:'flex', flexDirection:'column', cursor:'pointer', transition:'border-color .2s' }}
+      whileHover={{ y:-7, borderColor:'var(--border2)', boxShadow:'0 20px 50px rgba(0,0,0,.18)', border:'1px solid var(--accent)' }}
+      style={{ background:'var(--surface)', border:'1px solid var(--border)', borderRadius:'var(--rl)', overflow:'hidden', display:'flex', flexDirection:'column', cursor:'pointer', transition:'border .2s' }}
       onClick={() => window.open(p.link, '_blank')}>
       <div style={{ overflow:'hidden', aspectRatio:'16/10', background:'var(--bg3)', position:'relative', flexShrink:0 }}>
         {!imgErr

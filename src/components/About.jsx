@@ -43,7 +43,7 @@ export default function About() {
                     <div style={{ fontFamily:"'Syne',sans-serif", fontWeight:700, fontSize:'.9375rem', color:'#f0f0f0' }}>Serhii Kaliuzhnyi</div>
                     <div style={{ fontSize:'.8rem', color:'rgba(240,240,240,.65)', marginTop:'.2rem' }}>Fullstack Developer</div>
                   </div>
-                  <div style={{ display:'inline-flex', alignItems:'center', gap:'.375rem', background:'rgba(232,255,107,.12)', border:'1px solid rgba(232,255,107,.25)', borderRadius:999, padding:'.2rem .7rem', fontSize:'.72rem', color:'#e8ff6b', fontWeight:700, whiteSpace:'nowrap' }}>
+                  <div style={{ display:'inline-flex', alignItems:'center', gap:'.375rem', background:'rgba(232,255,107,.12)', border:'1px solid rgba(232,255,107,.25)', borderRadius:999, padding:'.2rem .7rem', fontSize:'.74rem', color:'#e8ff6b', fontWeight:700, whiteSpace:'nowrap' }}>
                     <motion.span animate={{ opacity:[1,.3,1] }} transition={{ duration:1.6, repeat:Infinity }} style={{ width:5, height:5, background:'#e8ff6b', borderRadius:'50%', display:'inline-block' }}/>
                     {t('about.avail')}
                   </div>

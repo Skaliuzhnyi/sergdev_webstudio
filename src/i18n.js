@@ -42,7 +42,7 @@ const uk = {
     label:'Про мене', title:'Я створюю веб, який працює на ваш бізнес',
     p1:'Привіт, я Сергій — fullstack-розробник. Будую веб-застосунки та сайти, що вирішують реальні бізнесові задачі.',
     p2:'Досвід у стартапах і агенціях. Чистий, масштабований код. Відповідаю швидко, дотримуюсь дедлайнів, беру відповідальність за результат.',
-    cta:'Зв\'язатись зі мною', avail:'Доступний для проектів',
+    cta:'Зв\'язатись зі мною', avail:'Доступний',
   },
   services: {
     label:'Послуги', title:'Що я роблю', sub:'Повний цикл — від стратегії до деплою.',
@@ -166,7 +166,7 @@ const de = {
     label:'Über mich', title:'Ich entwickle Web, das für Ihr Business arbeitet',
     p1:'Hallo, ich bin Serhii — Fullstack-Entwickler. Ich baue Web-Apps und Websites, die echte Probleme lösen.',
     p2:'Erfahrung in Startups und Agenturen. Sauberer Code. Schnelle Antworten, Deadlines einhalten, Verantwortung übernehmen.',
-    cta:'Kontakt aufnehmen', avail:'Verfügbar für neue Projekte',
+    cta:'Kontakt aufnehmen', avail:'Verfügbar',
   },
   services: {
     label:'Leistungen', title:'Was ich mache', sub:'Vollständiger Zyklus — von der Strategie bis zum Deployment.',
@@ -290,7 +290,7 @@ const en = {
     label:'About me', title:'I build web that works for your business',
     p1:'Hey, I\'m Serhii — a fullstack developer. I build web apps and websites that solve real business problems.',
     p2:'Experience in startups and agencies. Clean, scalable code. Fast replies, deadlines met, results owned.',
-    cta:'Get in touch', avail:'Available for new projects',
+    cta:'Get in touch', avail:'Available',
   },
   services: {
     label:'Services', title:'What I do', sub:'Full cycle — from strategy to deployment.',

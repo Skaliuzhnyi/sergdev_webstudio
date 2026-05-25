@@ -18,7 +18,7 @@ export default function Why() {
             <motion.div key={i} variants={item}
               whileHover={{ y:-3, borderColor:'var(--border2)' }}
               style={{ background:'var(--surface)', border:'1px solid var(--border)', borderRadius:'var(--rl)', padding:'1.875rem', transition:'all .28s', cursor:'default', position: 'relative' }}>
-              <span style={{ fontFamily:"'Syne',sans-serif", fontSize:'3.25rem', fontWeight:800, color:'var(--accent)', lineHeight: '1', display:'block', position: 'absolute', right: "10%", top: '10%'}}>{w.n}</span>
+              <span style={{ fontFamily:"'Syne',sans-serif", fontSize:'4.5rem', fontWeight:800, color:'var(--accent)', lineHeight: '1', display:'block', position: 'absolute', right: "10%", top: '10%'}}>{w.n}</span>
               <div style={{ width:44, height:44, borderRadius:12, background:'var(--accent-dim)', border:'1px solid rgba(var(--accent-rgb),.2)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:'1.375rem', marginBottom:'1.125rem' }}>
                 {ICONS[i]}
               </div>

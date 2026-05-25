@@ -17,6 +17,7 @@ export default function Projects() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language
   const meta = SEO_META[lang] || SEO_META.uk
+  const isUk = i18n.language === 'uk'
 
   return (
     <>
@@ -31,7 +32,7 @@ export default function Projects() {
         <div className="wrap">
           <SectionLabel>{t('portfolio.label')}</SectionLabel>
           <FadeUp delay={0.05}>
-            <h1 style={{ fontFamily:'var(--ff)', fontSize:'clamp(2.5rem,6vw,5rem)', fontWeight:800, letterSpacing:'-.04em', lineHeight:1.06, marginBottom:'1rem' }}>
+            <h1 style={{ fontFamily:isUk ? "'Unbounded', sans-serif" : "'Syne', sans-serif", fontSize:'clamp(2.5rem,6vw,5rem)', fontWeight:800, letterSpacing:'-.04em', lineHeight:1.06, marginBottom:'1rem' }}>
               {t('portfolio.title')}
             </h1>
           </FadeUp>
@@ -46,7 +47,7 @@ export default function Projects() {
       {/* All projects grid */}
       <section style={{ paddingTop:'1rem', paddingBottom:'6rem' }}>
         <div className="wrap">
-          <StaggerContainer stagger={0.08} style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(340px,1fr))', gap:'1.375rem' }}>
+          <StaggerContainer stagger={0.08} style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(340px,1fr))', gap:'1.375rem' }} >
             {PROJECTS.map(p => <ProjectCard key={p.id} p={p} />)}
           </StaggerContainer>
         </div>

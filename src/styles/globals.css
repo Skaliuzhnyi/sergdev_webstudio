@@ -201,3 +201,16 @@ footer {
   .wrap { padding: 0 1.125rem }
   section { padding: clamp(3.5rem, 8vw, 5rem) 0 }
 }
+
+/* ══════════════════════════════════════════════
+   Process
+══════════════════════════════════════════════ */
+
+.numberWrap:hover .number {
+  color: var(--accent) !important;
+}
+
+@media (max-width: 480px) {
+  .numberWrap { gap: 2rem}
+  .number { font-size: 1rem }
+}

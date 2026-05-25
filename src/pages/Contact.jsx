@@ -7,6 +7,7 @@ import ContactForm from '../components/ContactForm'
 import whatsApp from '@/images/icons/social/whatsapp.png'
 import tg from '@/images/icons/social/tg.png'
 import mail from '@/images/icons/social/mail.png'
+import i18n from "i18next";
 
 const SEO_META = {
   uk: { title: 'Контакт — Обговорити проект | Serhii Kaliuzhnyi', desc: "Зв'яжіться для безкоштовної консультації. Відповідаю протягом кількох годин." },
@@ -39,6 +40,7 @@ export default function Contact() {
   const meta = SEO_META[lang] || SEO_META.uk
   const pm = PROCESS_MINI[lang] || PROCESS_MINI.uk
   const avail = AVAIL[lang] || AVAIL.uk
+  const isUk = i18n.language === 'uk'
 
   return (
     <>
@@ -58,7 +60,7 @@ export default function Contact() {
         <div className="wrap" style={{ position: 'relative', zIndex: 1 }}>
           <SectionLabel>{t('contact.label')}</SectionLabel>
           <FadeUp delay={0.05}>
-            <h1 style={{ fontFamily: 'var(--ff)', fontSize: 'clamp(2.25rem,5vw,4rem)', fontWeight: 800, letterSpacing: '-.04em', lineHeight: 1.06, marginBottom: '1rem' }}>
+            <h1 style={{ fontFamily: isUk ? "'Unbounded', sans-serif" : "'Syne', sans-serif", fontSize: 'clamp(2.25rem,5vw,4rem)', fontWeight: 800, letterSpacing: '-.04em', lineHeight: 1.06, marginBottom: '1rem' }}>
               {t('contact.title')}
             </h1>
           </FadeUp>

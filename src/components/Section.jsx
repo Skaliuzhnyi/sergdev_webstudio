@@ -16,7 +16,7 @@ export function SectionTitle({ children, delay = 0.05, as = 'h2', style = {} }) 
   return (
     <FadeUp delay={delay}>
       <Tag style={{
-        fontFamily:    isUk ? "'Manrope', sans-serif" : "'Syne', sans-serif",
+        fontFamily:    isUk ? "'Unbounded', sans-serif" : "'Syne', sans-serif",
         fontSize:      isUk ? 'clamp(1.5rem,3.2vw,2.5rem)' : 'clamp(1.75rem,3.8vw,3rem)',
         fontWeight:    800,
         letterSpacing: isUk ? '-.02em' : '-.035em',
