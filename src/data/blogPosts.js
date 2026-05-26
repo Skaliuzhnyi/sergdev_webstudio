@@ -4,6 +4,244 @@
 
 export const POSTS = [
   {
+    slug: 'landing-page-conversion-tipps',
+    date: '2026-05-26',
+    readMin: { uk: 6, de: 6, en: 6 },
+    category: { uk: 'Конверсія', de: 'Konversion', en: 'Conversion' },
+    cover: null,
+    title: {
+      uk: 'Лендінг з конверсією 15%+: що реально працює у 2026',
+      de: 'Landingpage mit 15%+ Konversion: Was 2026 wirklich funktioniert',
+      en: 'Landing Page with 15%+ Conversion: What Actually Works in 2026',
+    },
+    excerpt: {
+      uk: 'Середня конверсія лендінгу — 2–3%. Але деякі сторінки дають 15% і вище. Розбираємо 8 елементів які відрізняють їх від звичайних.',
+      de: 'Die durchschnittliche Landingpage-Konversion liegt bei 2–3%. Manche Seiten erreichen 15% und mehr. Wir analysieren 8 Elemente, die sie unterscheiden.',
+      en: 'The average landing page conversion is 2–3%. But some pages deliver 15% and above. We break down 8 elements that set them apart.',
+    },
+    body: {
+      uk: `## Що таке конверсія і чому 2% — це мало?
+
+Конверсія — відсоток відвідувачів що зробили цільову дію: залишили заявку, зателефонували, купили.
+
+Середній показник — **2–4%**. З 100 відвідувачів лише 2–4 стають лідами. Якщо витрачаєте 500€ на рекламу і отримуєте 100 кліків — при 2% маєте 2 заявки по 250€ кожна. При 10% — ті ж 500€ але **10 заявок по 50€**.
+
+---
+
+## 1. Заголовок відповідає на одне питання клієнта
+
+Не "Ми — компанія №1". А "Отримайте сайт що приводить клієнтів — за 3 тижні".
+
+**Формула:** [Що отримує клієнт] + [за який час] + [для кого]
+
+---
+
+## 2. Одна сторінка — одна ціль
+
+Лендінг з 5 кнопками — клієнт губиться і не робить нічого.
+
+**Правило:** один заклик до дії. Максимум два — основний і допоміжний.
+
+---
+
+## 3. Соціальний доказ вище складки
+
+"Складка" — частина сторінки видна без скролу. Тут повинні бути:
+- Кількість клієнтів або проектів
+- Зірки рейтингу або цитата відгуку
+- Логотипи відомих клієнтів
+
+---
+
+## 4. Конкретика замість абстракцій
+
+Погано: "Ми збільшуємо продажі вашого бізнесу"
+Добре: "Наші клієнти отримують в середньому +34% заявок після редизайну"
+
+---
+
+## 5. Форма з мінімальними полями
+
+Кожне додаткове поле знижує конверсію на **10–15%**.
+
+Для першого контакту: ім'я + телефон або email. Решта — на дзвінку.
+
+---
+
+## 6. Мобільна версія — окремий дизайн
+
+70% конверсій відбуваються з мобільного. CTA-кнопка завжди видима, форма займає весь екран, текст мінімум 16px.
+
+---
+
+## 7. Швидкість завантаження
+
+Кожна зайва секунда = мінус 7% конверсії. Ціль: **< 2 секунди**. Перевірте: [pagespeed.web.dev](https://pagespeed.web.dev)
+
+---
+
+## 8. A/B тест заголовку
+
+Навіть невелика зміна заголовку може підняти конверсію на 20–40%. Зробіть дві версії, розділіть трафік і виміряйте через 2–3 тижні.
+
+---
+
+## Чеклист перед публікацією
+
+- [ ] Заголовок відповідає на питання клієнта за 5 сек
+- [ ] Одна головна CTA-кнопка
+- [ ] Соціальний доказ вище складки
+- [ ] Форма максимум 2–3 поля
+- [ ] PageSpeed Score > 80 на мобільному
+- [ ] Протестовано на реальному смартфоні`,
+
+      de: `## Was ist Konversion und warum sind 2% zu wenig?
+
+Konversion ist der Prozentsatz der Besucher, die eine Zielaktion durchgeführt haben.
+
+Branchendurchschnitt: **2–4%**. Von 100 Besuchern werden nur 2–4 zu Leads. Bei 500€ Werbebudget und 2% Konversion — 2 Anfragen à 250€. Bei 10% — **10 Anfragen à 50€**.
+
+---
+
+## 1. Die Überschrift beantwortet EINE Kundenfrage
+
+Nicht "Wir sind №1". Sondern "Website die Kunden bringt — in 3 Wochen".
+
+**Formel:** [Was der Kunde bekommt] + [in welcher Zeit] + [für wen]
+
+---
+
+## 2. Eine Seite — ein Ziel
+
+Landingpage mit 5 Buttons — der Kunde verliert sich.
+
+**Regel:** ein Call-to-Action. Maximal zwei — primär und sekundär.
+
+---
+
+## 3. Sozialer Beweis über dem Fold
+
+Anzahl Kunden/Projekte, Sternebewertung, bekannte Kundenlogos — sofort sichtbar ohne Scrollen.
+
+---
+
+## 4. Konkret statt abstrakt
+
+Schlecht: "Wir steigern Ihren Umsatz"
+Gut: "Unsere Kunden erhalten durchschnittlich +34% mehr Anfragen"
+
+---
+
+## 5. Formular mit minimalen Feldern
+
+Jedes zusätzliche Feld senkt die Konversion um **10–15%**.
+
+Für ersten Kontakt: Name + Telefon oder E-Mail reicht.
+
+---
+
+## 6. Mobile Version — eigenes Design
+
+70% der Konversionen erfolgen über Mobilgeräte. CTA-Button immer sichtbar, Formular nimmt ganzen Bildschirm ein, Text mindestens 16px.
+
+---
+
+## 7. Ladegeschwindigkeit
+
+Jede Sekunde = minus 7% Konversion. Ziel: **< 2 Sekunden**. Prüfen: [pagespeed.web.dev](https://pagespeed.web.dev)
+
+---
+
+## 8. A/B-Test der Überschrift
+
+Bereits kleine Änderungen können Konversion um 20–40% steigern.
+
+---
+
+## Checkliste vor Veröffentlichung
+
+- [ ] Überschrift beantwortet Kundenfrage in 5 Sek
+- [ ] Ein Haupt-CTA-Button
+- [ ] Sozialer Beweis über dem Fold
+- [ ] Formular max. 2–3 Felder
+- [ ] PageSpeed > 80 auf Mobilgeräten
+- [ ] Auf echtem Smartphone getestet`,
+
+      en: `## What Is Conversion and Why Is 2% Too Little?
+
+Conversion is the percentage of visitors who took a target action.
+
+Industry average: **2–4%**. Out of 100 visitors only 2–4 become leads. With €500 ad budget at 2% — 2 enquiries at €250 each. At 10% — **10 enquiries at €50 each**.
+
+---
+
+## 1. The Headline Answers ONE Client Question
+
+Not "We are №1". But "Get a website that brings clients — in 3 weeks".
+
+**Formula:** [What the client gets] + [in what time] + [for whom]
+
+---
+
+## 2. One Page — One Goal
+
+Landing page with 5 buttons — the client gets confused and does nothing.
+
+**Rule:** one call-to-action. Maximum two — primary and secondary.
+
+---
+
+## 3. Social Proof Above the Fold
+
+Number of clients/projects, star rating, known client logos — visible without scrolling.
+
+---
+
+## 4. Specifics Instead of Abstractions
+
+Bad: "We increase your business sales"
+Good: "Our clients get an average of +34% more enquiries after redesign"
+
+---
+
+## 5. Form with Minimal Fields
+
+Every additional field reduces conversion by **10–15%**.
+
+For first contact: name + phone or email is enough.
+
+---
+
+## 6. Mobile Version — Separate Design
+
+70% of conversions happen on mobile. CTA button always visible, form takes full screen, text minimum 16px.
+
+---
+
+## 7. Loading Speed
+
+Every extra second = minus 7% conversion. Goal: **< 2 seconds**. Check: [pagespeed.web.dev](https://pagespeed.web.dev)
+
+---
+
+## 8. A/B Test the Headline
+
+Even small changes can increase conversion by 20–40%.
+
+---
+
+## Pre-Publication Checklist
+
+- [ ] Headline answers client question in 5 sec
+- [ ] One main CTA button
+- [ ] Social proof above the fold
+- [ ] Form max 2–3 fields
+- [ ] PageSpeed > 80 on mobile
+- [ ] Tested on a real smartphone`,
+    },
+  },
+
+  {
     slug: 'warum-ihre-website-kunden-verliert',
     date: '2026-05-10',
     readMin: {uk: 5, de: 5, en: 5},
@@ -1058,3 +1296,797 @@ export const getPostBySlug = (slug) => POSTS.find(p => p.slug === slug) || null
 
 // Helper: get N recent posts (for homepage widget etc.)
 export const getRecentPosts = (n = 3) => POSTS.slice(0, n)
+
+/*
+
+export const POSTS = [
+  // ─── POST 6 ───────────────────────────────────────────────────
+
+
+  // ─── POST 7 ───────────────────────────────────────────────────
+  {
+    slug: 'google-analytics-4-setup',
+    date: '2026-05-15',
+    readMin: { uk: 5, de: 5, en: 5 },
+    category: { uk: 'Аналітика', de: 'Analytics', en: 'Analytics' },
+    cover: null,
+    title: {
+      uk: 'Google Analytics 4: 6 метрик які реально важливі для малого бізнесу',
+      de: 'Google Analytics 4: 6 Metriken die für kleine Unternehmen wirklich wichtig sind',
+      en: 'Google Analytics 4: 6 Metrics That Actually Matter for Small Business',
+    },
+    excerpt: {
+      uk: 'GA4 встановлено — і що далі? Більшість власників бізнесу дивляться на цифри і не розуміють що з ними робити. Пояснюємо 6 метрик які мають значення.',
+      de: 'GA4 ist installiert — und jetzt? Die meisten Unternehmer schauen auf Zahlen ohne zu wissen, was damit anfangen. Wir erklären 6 Metriken die wirklich wichtig sind.',
+      en: 'GA4 is installed — now what? Most business owners look at numbers without knowing what to do. We explain 6 metrics that actually matter.',
+    },
+    body: {
+      uk: `## Чому аналітика важлива?
+
+Без аналітики ви керуєте бізнесом наосліп. Не знаєте звідки приходять клієнти, які сторінки відлякують відвідувачів і скільки коштує один лід.
+
+Google Analytics 4 — безкоштовний інструмент що відповідає на всі ці питання.
+
+---
+
+## Як підключити GA4 (коротко)
+
+1. Зайдіть на [analytics.google.com](https://analytics.google.com)
+2. Створіть акаунт і властивість для сайту
+3. Отримайте **Measurement ID** (формат G-XXXXXXXXXX)
+4. Додайте скрипт в head сайту або через Google Tag Manager
+
+---
+
+## 6 метрик які реально важливі
+
+### 1. Активні користувачі
+
+Скільки людей були на сайті. Дивіться **динаміку** — ростуть чи падають? Різкий спад без причини — можлива проблема з індексацією.
+
+### 2. Канали трафіку
+
+- **Organic Search** — з Google без реклами
+- **Direct** — ввели адресу напряму
+- **Referral** — з інших сайтів
+- **Paid Search** — з реклами
+
+Якщо 90% — Direct: сайт знаходять лише ті хто вже знає про вас. Нових клієнтів з пошуку немає.
+
+### 3. Engagement Rate
+
+Відсоток сесій де користувач провів **> 10 секунд або перейшов на іншу сторінку**.
+
+Норма: **> 50%**. Нижче — сторінка не відповідає очікуванням.
+
+### 4. Average Engagement Time
+
+Середній час залученості. Якщо люди проводять на лендінгу 8 секунд — вони не читають текст. Норма для лендінгу: **> 45 секунд**.
+
+### 5. Conversions (Конверсії)
+
+Найважливіша метрика. GA4 не відстежує їх автоматично — налаштуйте вручну:
+- Натискання кнопки "Залишити заявку"
+- Відправка форми
+- Натискання на телефон
+
+Без налаштованих конверсій аналітика — просто красиві графіки.
+
+### 6. Landing Pages
+
+Які сторінки отримують найбільше трафіку і де найвищий Engagement Rate. Якщо головна отримує 80% трафіку але Engagement Rate 25% — переробляйте першу секцію.
+
+---
+
+## Бонус: Google Search Console
+
+Безкоштовний інструмент що показує:
+- За якими словами вас знаходять
+- Які сторінки мають найбільше показів
+- Технічні проблеми з індексацією
+
+Використовуйте разом з GA4 — повна картина присутності в Google.`,
+
+      de: `## Warum ist Analytics wichtig?
+
+Ohne Analytics leiten Sie Ihr Unternehmen blind: kein Wissen woher Kunden kommen, welche Seiten abschrecken, was ein Lead kostet.
+
+---
+
+## 6 Metriken die wirklich wichtig sind
+
+### 1. Aktive Nutzer
+
+Schauen Sie auf die **Dynamik**. Plötzlicher Rückgang ohne Grund — mögliches Indexierungsproblem.
+
+### 2. Traffic-Kanäle
+
+- **Organic Search** — aus Google ohne Werbung
+- **Direct** — Adresse direkt eingegeben
+- **Referral** — von anderen Websites
+- **Paid Search** — aus Werbung
+
+Wenn 90% Direct: nur Bekannte finden die Site. Keine neuen Kunden aus der Suche.
+
+### 3. Engagement Rate
+
+Prozentsatz der Sitzungen > 10 Sekunden oder mit Seitennavigation. Norm: **> 50%**.
+
+### 4. Average Engagement Time
+
+Wenn Nutzer 8 Sekunden auf der Landingpage verbringen — lesen sie nicht. Norm: **> 45 Sekunden**.
+
+### 5. Conversions
+
+Manuell einrichten:
+- Klick auf "Anfrage senden"
+- Formularabsendung
+- Klick auf Telefonnummer
+
+Ohne konfigurierte Konversionen sind Analytics nur schöne Diagramme.
+
+### 6. Landing Pages
+
+Welche Seiten bekommen meisten Traffic und wo ist Engagement Rate am höchsten.
+
+---
+
+## Bonus: Google Search Console
+
+Zeigt nach welchen Wörtern Sie gefunden werden, welche Seiten meiste Impressionen haben, technische Indexierungsprobleme.`,
+
+      en: `## Why Is Analytics Important?
+
+Without analytics you're running blind: no knowledge of where clients come from, which pages repel visitors, what a lead costs.
+
+---
+
+## 6 Metrics That Actually Matter
+
+### 1. Active Users
+
+Look at the **trend**. Sudden drop without reason — possible indexing problem.
+
+### 2. Traffic Channels
+
+- **Organic Search** — from Google without ads
+- **Direct** — typed address directly
+- **Referral** — from other websites
+- **Paid Search** — from advertising
+
+If 90% is Direct: only people who already know you find the site.
+
+### 3. Engagement Rate
+
+Percentage of sessions > 10 seconds or with page navigation. Benchmark: **> 50%**.
+
+### 4. Average Engagement Time
+
+If people spend 8 seconds on a landing page — they're not reading. Benchmark: **> 45 seconds**.
+
+### 5. Conversions
+
+Set up manually:
+- Click on "Leave a request"
+- Form submission
+- Click on phone number
+
+Without configured conversions, analytics is just pretty charts.
+
+### 6. Landing Pages
+
+Which pages get most traffic and where is Engagement Rate highest.
+
+---
+
+## Bonus: Google Search Console
+
+Shows which search terms find you, which pages have most impressions, technical indexing problems. Use alongside GA4 for the full picture.`,
+    },
+  },
+
+  // ─── POST 8 ───────────────────────────────────────────────────
+  {
+    slug: 'woocommerce-online-shop-starten',
+    date: '2026-05-01',
+    readMin: { uk: 7, de: 7, en: 7 },
+    category: { uk: 'E-Commerce', de: 'E-Commerce', en: 'E-Commerce' },
+    cover: null,
+    title: {
+      uk: 'Інтернет-магазин на WooCommerce: що потрібно знати перед стартом',
+      de: 'Online-Shop mit WooCommerce: Was Sie vor dem Start wissen müssen',
+      en: 'WooCommerce Online Store: What You Need to Know Before Starting',
+    },
+    excerpt: {
+      uk: 'WooCommerce — найпопулярніша e-commerce платформа у світі. Але більшість проектів провалюються через типові помилки ще до запуску. Розбираємо їх.',
+      de: 'WooCommerce ist die beliebteste E-Commerce-Plattform weltweit. Aber die meisten Projekte scheitern durch typische Fehler noch vor dem Launch.',
+      en: 'WooCommerce is the world\'s most popular e-commerce platform. But most projects fail before launch due to typical mistakes. We break them down.',
+    },
+    body: {
+      uk: `## Чому WooCommerce?
+
+За статистикою 2026 року **26% всіх онлайн-магазинів у світі** працюють на WooCommerce. Безкоштовна основа, тисячі плагінів, гнучке налаштування.
+
+---
+
+## Що потрібно для запуску
+
+**Технічна база:**
+- Хостинг — мінімум 2GB RAM, SSD, PHP 8.1+ (дешевий shared не підходить)
+- Домен — .de для Німеччини
+- SSL — обов'язково (Let's Encrypt безкоштовно)
+
+**Контент:**
+- Фото товарів (3–5 на кожен, білий фон)
+- Унікальні описи (не копія з постачальника)
+- Ціни, вага, розміри для доставки
+
+---
+
+## 5 типових помилок
+
+### Помилка 1: Дешевий хостинг
+
+За 2€/місяць магазин завантажується 8–12 сек — клієнти йдуть. **Мінімум:** 5–15€/місяць (SiteGround, Cloudways).
+
+### Помилка 2: Немає кешування
+
+Без кешу кожен відвідувач заново будує сторінку. При 100 одночасних — сайт падає. Встановіть **WP Rocket** або **LiteSpeed Cache**.
+
+### Помилка 3: Занадто багато плагінів
+
+40+ плагінів = гарантовані конфлікти і повільна робота. Оптимально: **10–15** ретельно відібраних.
+
+### Помилка 4: Немає бекапів
+
+Щоденний бекап на зовнішнє сховище: **UpdraftPlus + Google Drive**.
+
+### Помилка 5: Ігнорування юридичних вимог (Німеччина)
+
+Обов'язково: Impressum, Datenschutzerklärung (DSGVO), AGB, Widerrufsrecht (14 днів), ціни з ПДВ. Штрафи: від 1 000€ до 10 000€.
+
+---
+
+## Необхідні плагіни
+
+| Плагін | Навіщо |
+|---|---|
+| WooCommerce | Базова функціональність |
+| Germanized / German Market | DSGVO, AGB, Widerrufsrecht |
+| WP Rocket або LiteSpeed | Кешування |
+| Yoast SEO або RankMath | SEO |
+| UpdraftPlus | Бекапи |
+| Mollie або Stripe | Оплата |
+
+---
+
+## Платіжні системи для Німеччини
+
+- **PayPal** — must have, 70%+ клієнтів
+- **Klarna** — оплата в розстрочку, дуже популярна
+- **Kreditkarte** — Visa/Mastercard через Stripe
+- **Überweisung** — банківський переказ
+
+**Рекомендація:** Mollie — підключає всі методи одразу.
+
+---
+
+## Мінімальний бюджет запуску
+
+| Стаття | Вартість |
+|---|---|
+| Хостинг (SiteGround) | 15€/місяць |
+| Домен | 15€/рік |
+| WP Rocket | 59€/рік |
+| Germanized Pro | 79€/рік |
+| Розробка і налаштування | 1 500–4 000€ |`,
+
+      de: `## Warum WooCommerce?
+
+**26% aller Online-Shops weltweit** laufen 2026 auf WooCommerce. Kostenlose Basis, tausende Plugins, flexible Konfiguration.
+
+---
+
+## Was für den Start benötigt wird
+
+- Hosting — mindestens 2GB RAM, SSD, PHP 8.1+
+- Domain — .de für Deutschland
+- SSL — Pflicht (Let's Encrypt kostenlos)
+
+---
+
+## 5 typische Fehler
+
+### Fehler 1: Günstiges Hosting
+
+Bei 2€/Monat lädt der Shop 8–12 Sek. **Minimum:** 5–15€/Monat.
+
+### Fehler 2: Kein Caching
+
+**WP Rocket** oder **LiteSpeed Cache** installieren.
+
+### Fehler 3: Zu viele Plugins
+
+40+ Plugins = Konflikte. Optimal: **10–15** sorgfältig ausgewählte.
+
+### Fehler 4: Kein Backup
+
+Täglich auf externen Speicher: **UpdraftPlus + Google Drive**.
+
+### Fehler 5: Rechtliche Anforderungen ignorieren
+
+Pflicht in DE: Impressum, DSGVO, AGB, Widerrufsrecht (14 Tage), MwSt-Ausweis. Bußgelder: 1.000–10.000€.
+
+---
+
+## Notwendige Plugins
+
+| Plugin | Zweck |
+|---|---|
+| WooCommerce | Grundfunktionalität |
+| Germanized / German Market | DSGVO, AGB, Widerruf |
+| WP Rocket / LiteSpeed | Caching |
+| Yoast / RankMath | SEO |
+| UpdraftPlus | Backup |
+| Mollie / Stripe | Zahlung |
+
+---
+
+## Zahlungsmethoden
+
+- **PayPal** — Must-have, 70%+ der Kunden
+- **Klarna** — Ratenzahlung, sehr beliebt
+- **Kreditkarte** via Stripe
+- **Überweisung**
+
+**Empfehlung:** Mollie — verbindet alle Methoden auf einmal.`,
+
+      en: `## Why WooCommerce?
+
+**26% of all online stores worldwide** run on WooCommerce in 2026. Free core, thousands of plugins, flexible configuration.
+
+---
+
+## What You Need to Launch
+
+- Hosting — minimum 2GB RAM, SSD, PHP 8.1+ (cheap shared isn't suitable)
+- Domain — .com or country-specific
+- SSL — mandatory (Let's Encrypt free)
+
+---
+
+## 5 Typical Mistakes
+
+### Mistake 1: Cheap Hosting
+
+At €2/month the store loads 8–12 sec. **Minimum:** €5–15/month.
+
+### Mistake 2: No Caching
+
+Install **WP Rocket** or **LiteSpeed Cache**.
+
+### Mistake 3: Too Many Plugins
+
+40+ plugins = conflicts. Optimal: **10–15** carefully selected.
+
+### Mistake 4: No Backups
+
+Daily to external storage: **UpdraftPlus + Google Drive**.
+
+### Mistake 5: Ignoring Legal Requirements
+
+Germany mandates: Impressum, GDPR policy, T&C, 14-day return right, prices with VAT. Fines: €1,000–€10,000.
+
+---
+
+## Essential Plugins
+
+| Plugin | Purpose |
+|---|---|
+| WooCommerce | Core functionality |
+| Germanized / German Market | GDPR, T&C, returns |
+| WP Rocket / LiteSpeed | Caching |
+| Yoast / RankMath | SEO |
+| UpdraftPlus | Backups |
+| Mollie / Stripe | Payments |
+
+---
+
+## Payment Methods for Germany
+
+- **PayPal** — must have, 70%+ use it
+- **Klarna** — buy now pay later, very popular
+- **Credit card** via Stripe
+- **Bank transfer**
+
+**Recommendation:** Mollie — connects all methods at once.`,
+    },
+  },
+
+  // ─── POST 9 ───────────────────────────────────────────────────
+  {
+    slug: 'impressum-datenschutz-deutschland',
+    date: '2026-04-15',
+    readMin: { uk: 5, de: 5, en: 5 },
+    category: { uk: 'Право', de: 'Recht', en: 'Legal' },
+    cover: null,
+    title: {
+      uk: "Impressum і Datenschutz: обов'язкові сторінки для сайту в Німеччині",
+      de: 'Impressum und Datenschutz: Pflichtseiten für Websites in Deutschland',
+      en: 'Impressum and Datenschutz: Mandatory Pages for Websites in Germany',
+    },
+    excerpt: {
+      uk: "Кожен сайт в Німеччині зобов'язаний мати Impressum і Datenschutzerklärung. Без них — штрафи від 1 000€. Пояснюємо що саме потрібно.",
+      de: 'Jede Website in Deutschland braucht Impressum und Datenschutzerklärung. Ohne sie — Bußgelder ab 1.000€. Wir erklären, was benötigt wird.',
+      en: 'Every website in Germany must have an Impressum and Datenschutzerklärung. Without them — fines from €1,000. We explain exactly what is needed.',
+    },
+    body: {
+      uk: `## Правова основа
+
+Відсутність Impressum — адміністративне правопорушення за **§ 5 TMG** і **§ 55 RStV**. Штраф: від **1 000€ до 50 000€**. Плюс судові витрати від Abmahnung.
+
+Практика Abmahnung в Німеччині дуже поширена — адвокатські бюро активно шукають сайти без Impressum.
+
+---
+
+## Хто зобов'язаний мати Impressum?
+
+Всі з комерційною онлайн-присутністю: фрілансери, компанії, інтернет-магазини, блоги з рекламою, комерційні Instagram/Facebook-профілі.
+
+---
+
+## Що повинно бути в Impressum
+
+**Для фізичних осіб:**
+- Повне ім'я
+- Повна адреса (не PO Box)
+- Email адреса
+
+**Для юридичних осіб (GmbH, UG):**
+- Назва компанії, адреса, форма власності
+- Імена директорів
+- Handelsregisternummer і Registergericht
+- USt-IdNr. (якщо є)
+
+---
+
+## Datenschutzerklärung (DSGVO)
+
+Штрафи за порушення: до **20 млн € або 4% річного обороту**.
+
+**Що повинно бути:**
+1. Хто збирає дані (ваші контакти)
+2. Які дані: контактна форма, cookies, IP
+3. Для чого: обробка запитів, аналітика
+4. Хто має доступ: хостинг, Google тощо
+5. Права користувача: доступ, виправлення, видалення
+
+---
+
+## Cookie Banner
+
+Якщо використовуєте не-необхідні cookies (Google Analytics, реклама) — banner **обов'язковий**. Відмова повинна бути так само легкою як прийняття.
+
+Безкоштовно: **Borlabs Cookie** (WordPress) або **Cookiebot**.
+
+---
+
+## Де розмістити
+
+- Impressum і Datenschutz — в Footer **кожної сторінки**
+- Доступні в **1 клік** з будь-якої сторінки
+
+---
+
+## Безкоштовні генератори
+
+- datenschutz-generator.de
+- e-recht24.de
+- dsgvo-generator.net
+
+⚠️ Генератори — базовий шаблон. Для специфічних ситуацій — консультація юриста.`,
+
+      de: `## Rechtliche Grundlage
+
+Kein Impressum — Ordnungswidrigkeit nach **§ 5 TMG** und **§ 55 RStV**. Bußgeld: **1.000€ bis 50.000€**. Die Abmahn-Praxis ist in Deutschland sehr verbreitet.
+
+---
+
+## Wer braucht ein Impressum?
+
+Alle mit kommerzieller Online-Präsenz: Freiberufler, Unternehmen, Online-Shops, Blogs mit Werbung, kommerzielle Social-Media-Profile.
+
+---
+
+## Was muss im Impressum stehen?
+
+**Einzelpersonen:** vollständiger Name, vollständige Adresse (kein Postfach), E-Mail.
+
+**Juristische Personen (GmbH, UG):** Firmenname, Adresse, Rechtsform, Geschäftsführernamen, Handelsregisternummer, Registergericht, USt-IdNr.
+
+---
+
+## Datenschutzerklärung
+
+Bußgelder bis **20 Mio. € oder 4% Jahresumsatz**.
+
+Inhalt: wer Daten erhebt, welche (Formular, Cookies, IP), wozu, wer Zugang hat, Nutzerrechte.
+
+---
+
+## Cookie-Banner
+
+Bei nicht notwendigen Cookies (Analytics, Werbung) — **Pflicht**. Ablehnen muss genauso einfach sein wie Akzeptieren.
+
+Kostenlos: **Borlabs Cookie** (WordPress) oder **Cookiebot**.
+
+---
+
+## Platzierung
+
+Impressum und Datenschutz im Footer **jeder Seite**, erreichbar in **1 Klick**.
+
+---
+
+## Kostenlose Generatoren
+
+- datenschutz-generator.de
+- e-recht24.de
+- dsgvo-generator.net`,
+
+      en: `## Legal Basis
+
+No Impressum — administrative offense under **§ 5 TMG** and **§ 55 RStV**. Fine: **€1,000 to €50,000**. The Abmahnung practice is very widespread in Germany.
+
+---
+
+## Who Needs an Impressum?
+
+Everyone with commercial online presence: freelancers, companies, online stores, blogs with ads, commercial social media profiles.
+
+---
+
+## What Must Be in the Impressum?
+
+**Individuals:** full name, full address (no PO Box), email.
+
+**Legal entities (GmbH, UG):** company name, address, legal form, director names, commercial register number, registration court, VAT ID.
+
+---
+
+## Datenschutzerklärung
+
+Fines up to **€20 million or 4% of annual turnover**.
+
+Must include: who collects data, what data (form, cookies, IP), for what purpose, who has access, user rights.
+
+---
+
+## Cookie Banner
+
+For non-essential cookies (Analytics, advertising) — **mandatory**. Declining must be as easy as accepting.
+
+Free tools: **Borlabs Cookie** (WordPress) or **Cookiebot**.
+
+---
+
+## Placement
+
+Impressum and Datenschutz in the Footer of **every page**, reachable in **1 click**.
+
+---
+
+## Free Generators
+
+- datenschutz-generator.de
+- e-recht24.de
+- dsgvo-generator.net`,
+    },
+  },
+
+  // ─── POST 10 ──────────────────────────────────────────────────
+  {
+    slug: 'website-redesign-wann-und-warum',
+    date: '2026-02-20',
+    readMin: { uk: 5, de: 5, en: 5 },
+    category: { uk: 'Редизайн', de: 'Redesign', en: 'Redesign' },
+    cover: null,
+    title: {
+      uk: '7 ознак що вашому сайту потрібен редизайн (і коли це не потрібно)',
+      de: '7 Zeichen dass Ihre Website ein Redesign braucht (und wann nicht)',
+      en: '7 Signs Your Website Needs a Redesign (And When It Does Not)',
+    },
+    excerpt: {
+      uk: 'Не кожен старий сайт потребує переробки. Є конкретні сигнали які говорять: час діяти. Розбираємо коли редизайн — інвестиція, а коли — зайві витрати.',
+      de: 'Nicht jede alte Website braucht Redesign. Es gibt konkrete Signale die sagen: Zeit zu handeln. Wann ist Redesign Investition, wann unnötige Kosten?',
+      en: 'Not every old website needs a redesign. There are specific signals that say: time to act. When is redesign an investment and when unnecessary expense?',
+    },
+    body: {
+      uk: `## Редизайн ≠ "зробити гарніше"
+
+Найпоширеніша помилка: редизайн замовляють бо сайт "не подобається" власнику. Але клієнтам він може подобатись і добре конвертувати.
+
+Редизайн виправданий коли сайт **не виконує бізнесові цілі**.
+
+---
+
+## 7 ознак що пора переробляти
+
+### 1. Сайт не відображається на мобільному
+
+Відкрийте зараз на телефоні. Треба збільшувати текст, кнопки важко натиснути, форми незручні → **терміновий редизайн**. 60%+ відвідувачів з мобільного.
+
+### 2. PageSpeed Score нижче 50
+
+[pagespeed.web.dev](https://pagespeed.web.dev) — нижче 50 на мобільному значить Google вас понижує у видачі.
+
+### 3. Сайт старший за 4–5 років без оновлень
+
+Ознаки застарілості: немає HTTPS, не адаптивна верстка, застарілі шрифти і кольори.
+
+### 4. Конверсія нижче 1%
+
+З 100 відвідувачів менше 1 залишає заявку — щось відштовхує. Часто це дизайн і UX.
+
+### 5. Ви соромитесь давати адресу сайту
+
+Якщо думаєте "краще не давати посилання" — це вже достатній привід.
+
+### 6. Конкуренти виглядають значно краще
+
+Порівняйте з 3–5 конкурентами. Клієнти теж порівнюють.
+
+### 7. CMS не оновлювалась роками
+
+WordPress 5.x у 2026 — не просто застарілий, а небезпечний. Відомі вразливості активно використовуються.
+
+---
+
+## Коли редизайн НЕ потрібен
+
+- Сайт **добре конвертує** — не ламайте те що працює
+- Проблема в **контенті** — поганий текст не виправить дизайн
+- Бюджет лише на "косметику" — краще накопичити і зробити повноцінно
+- Сайту **менше 2 років** і він технічно нормальний
+
+---
+
+## Редизайн vs оптимізація
+
+| Ситуація | Рішення |
+|---|---|
+| Мобільна версія зламана | Редизайн |
+| Повільно завантажується | Оптимізація |
+| Застарілий вигляд | Редизайн |
+| Низька конверсія | Аудит → потім рішення |
+| CMS не оновлювалась | Оновлення або редизайн |
+
+---
+
+## Скільки коштує?
+
+- Лендінг: 800–1 500€
+- Корпоративний сайт: 2 000–5 000€
+- Інтернет-магазин: 3 000–8 000€
+
+**Часткова оптимізація** (зміна першого екрану, форми, навігації): 300–800€ — дає 80% результату від повного редизайну.
+
+Напишіть мені — зроблю безкоштовний аудит і скажу що конкретно потрібно вашому сайту.`,
+
+      de: `## Redesign ≠ "schöner machen"
+
+Redesign ist gerechtfertigt, wenn die Website **Geschäftsziele nicht erfüllt** — nicht konvertiert, auf Mobilgeräten nicht funktioniert, nicht in Google gefunden wird.
+
+---
+
+## 7 Zeichen dass es Zeit ist
+
+### 1. Keine mobile Darstellung
+
+Jetzt auf Smartphone öffnen. Text muss gezoomt werden, Buttons schwer zu drücken → **dringend**. 60%+ Besucher via Mobilgerät.
+
+### 2. PageSpeed unter 50
+
+[pagespeed.web.dev](https://pagespeed.web.dev) — unter 50 bedeutet Google senkt das Ranking.
+
+### 3. Website älter als 4–5 Jahre ohne Updates
+
+Anzeichen: kein HTTPS, nicht responsiv, veraltete Schriften und Farben.
+
+### 4. Konversion unter 1%
+
+Weniger als 1 von 100 hinterlässt Anfrage — etwas schreckt ab.
+
+### 5. Sie schämen sich die URL weiterzugeben
+
+"Lieber nicht verlinken" — das ist genug Grund.
+
+### 6. Konkurrenten sehen deutlich besser aus
+
+Kunden vergleichen ebenfalls.
+
+### 7. CMS jahrelang nicht aktualisiert
+
+WordPress 5.x in 2026 — gefährliche Sicherheitslücken.
+
+---
+
+## Wann kein Redesign nötig ist
+
+- Website **konvertiert gut** — kaputt machen was funktioniert
+- Problem liegt im **Content** — Design repariert keinen schlechten Inhalt
+- Budget nur für "Kosmetik" — lieber sparen und vollständig machen
+- Website **unter 2 Jahre** und technisch in Ordnung
+
+---
+
+## Redesign vs Optimierung
+
+| Situation | Lösung |
+|---|---|
+| Mobile kaputt | Redesign |
+| Langsam laden | Optimierung |
+| Veraltet | Redesign |
+| Niedrige Konversion | Audit → dann entscheiden |
+| CMS nicht aktualisiert | Update oder Redesign |`,
+
+      en: `## Redesign ≠ Making It Prettier
+
+Redesign is justified when the website **doesn't fulfill business goals** — doesn't convert, doesn't work on mobile, not found in Google.
+
+---
+
+## 7 Signs It's Time
+
+### 1. Broken Mobile Display
+
+Check on your phone right now. Text needs zooming, buttons hard to tap → **urgent**. 60%+ visitors are on mobile.
+
+### 2. PageSpeed Below 50
+
+[pagespeed.web.dev](https://pagespeed.web.dev) — below 50 means Google is demoting you.
+
+### 3. Website Older Than 4–5 Years Without Updates
+
+Signs: no HTTPS, not responsive, outdated fonts and colors.
+
+### 4. Conversion Below 1%
+
+Fewer than 1 in 100 leaves a request — something is repelling people.
+
+### 5. You Are Embarrassed to Share the URL
+
+"Better not to send the link" — that's already enough reason.
+
+### 6. Competitors Look Significantly Better
+
+Clients compare too.
+
+### 7. CMS Not Updated in Years
+
+Known security vulnerabilities actively exploited.
+
+---
+
+## When Redesign Is NOT Needed
+
+- Website **converts well** — don't break what works
+- Problem is in **content** — design won't fix bad copy
+- Budget only for "cosmetics" — save and do it properly
+- Website **under 2 years** and technically sound
+
+---
+
+## Redesign vs Optimization
+
+| Situation | Solution |
+|---|---|
+| Mobile broken | Redesign |
+| Slow loading | Optimization |
+| Outdated look | Redesign |
+| Low conversion | Audit → then decide |
+| CMS not updated | Update or redesign |`,
+    },
+  },
+]
+*/
