@@ -1289,6 +1289,186 @@ From my experience: 80% of project delays are not due to technical problems, but
 - [ ] **Registration data** — if applicable (Handelsregister, USt-IdNr.)`,
     },
   },
+
+  {
+    slug: 'impressum-datenschutz-deutschland',
+    date: '2026-06-15',
+    readMin: { uk: 5, de: 5, en: 5 },
+    category: { uk: 'Право', de: 'Recht', en: 'Legal' },
+    cover: null,
+    title: {
+      uk: "Impressum і Datenschutz: обов'язкові сторінки для сайту в Німеччині",
+      de: 'Impressum und Datenschutz: Pflichtseiten für Websites in Deutschland',
+      en: 'Impressum and Datenschutz: Mandatory Pages for Websites in Germany',
+    },
+    excerpt: {
+      uk: "Кожен сайт в Німеччині зобов'язаний мати Impressum і Datenschutzerklärung. Без них — штрафи від 1 000€. Пояснюємо що саме потрібно.",
+      de: 'Jede Website in Deutschland braucht Impressum und Datenschutzerklärung. Ohne sie — Bußgelder ab 1.000€. Wir erklären, was benötigt wird.',
+      en: 'Every website in Germany must have an Impressum and Datenschutzerklärung. Without them — fines from €1,000. We explain exactly what is needed.',
+    },
+    body: {
+      uk: `## Правова основа
+
+Відсутність Impressum — адміністративне правопорушення за **§ 5 TMG** і **§ 55 RStV**. Штраф: від **1 000€ до 50 000€**. Плюс судові витрати від Abmahnung.
+
+Практика Abmahnung в Німеччині дуже поширена — адвокатські бюро активно шукають сайти без Impressum.
+
+---
+
+## Хто зобов'язаний мати Impressum?
+
+Всі з комерційною онлайн-присутністю: фрілансери, компанії, інтернет-магазини, блоги з рекламою, комерційні Instagram/Facebook-профілі.
+
+---
+
+## Що повинно бути в Impressum
+
+**Для фізичних осіб:**
+- Повне ім'я
+- Повна адреса (не PO Box)
+- Email адреса
+
+**Для юридичних осіб (GmbH, UG):**
+- Назва компанії, адреса, форма власності
+- Імена директорів
+- Handelsregisternummer і Registergericht
+- USt-IdNr. (якщо є)
+
+---
+
+## Datenschutzerklärung (DSGVO)
+
+Штрафи за порушення: до **20 млн € або 4% річного обороту**.
+
+**Що повинно бути:**
+1. Хто збирає дані (ваші контакти)
+2. Які дані: контактна форма, cookies, IP
+3. Для чого: обробка запитів, аналітика
+4. Хто має доступ: хостинг, Google тощо
+5. Права користувача: доступ, виправлення, видалення
+
+---
+
+## Cookie Banner
+
+Якщо використовуєте не-необхідні cookies (Google Analytics, реклама) — banner **обов'язковий**. Відмова повинна бути так само легкою як прийняття.
+
+Безкоштовно: **Borlabs Cookie** (WordPress) або **Cookiebot**.
+
+---
+
+## Де розмістити
+
+- Impressum і Datenschutz — в Footer **кожної сторінки**
+- Доступні в **1 клік** з будь-якої сторінки
+
+---
+
+## Безкоштовні генератори
+
+- datenschutz-generator.de
+- e-recht24.de
+- dsgvo-generator.net
+
+⚠️ Генератори — базовий шаблон. Для специфічних ситуацій — консультація юриста.`,
+
+      de: `## Rechtliche Grundlage
+
+Kein Impressum — Ordnungswidrigkeit nach **§ 5 TMG** und **§ 55 RStV**. Bußgeld: **1.000€ bis 50.000€**. Die Abmahn-Praxis ist in Deutschland sehr verbreitet.
+
+---
+
+## Wer braucht ein Impressum?
+
+Alle mit kommerzieller Online-Präsenz: Freiberufler, Unternehmen, Online-Shops, Blogs mit Werbung, kommerzielle Social-Media-Profile.
+
+---
+
+## Was muss im Impressum stehen?
+
+**Einzelpersonen:** vollständiger Name, vollständige Adresse (kein Postfach), E-Mail.
+
+**Juristische Personen (GmbH, UG):** Firmenname, Adresse, Rechtsform, Geschäftsführernamen, Handelsregisternummer, Registergericht, USt-IdNr.
+
+---
+
+## Datenschutzerklärung
+
+Bußgelder bis **20 Mio. € oder 4% Jahresumsatz**.
+
+Inhalt: wer Daten erhebt, welche (Formular, Cookies, IP), wozu, wer Zugang hat, Nutzerrechte.
+
+---
+
+## Cookie-Banner
+
+Bei nicht notwendigen Cookies (Analytics, Werbung) — **Pflicht**. Ablehnen muss genauso einfach sein wie Akzeptieren.
+
+Kostenlos: **Borlabs Cookie** (WordPress) oder **Cookiebot**.
+
+---
+
+## Platzierung
+
+Impressum und Datenschutz im Footer **jeder Seite**, erreichbar in **1 Klick**.
+
+---
+
+## Kostenlose Generatoren
+
+- datenschutz-generator.de
+- e-recht24.de
+- dsgvo-generator.net`,
+
+      en: `## Legal Basis
+
+No Impressum — administrative offense under **§ 5 TMG** and **§ 55 RStV**. Fine: **€1,000 to €50,000**. The Abmahnung practice is very widespread in Germany.
+
+---
+
+## Who Needs an Impressum?
+
+Everyone with commercial online presence: freelancers, companies, online stores, blogs with ads, commercial social media profiles.
+
+---
+
+## What Must Be in the Impressum?
+
+**Individuals:** full name, full address (no PO Box), email.
+
+**Legal entities (GmbH, UG):** company name, address, legal form, director names, commercial register number, registration court, VAT ID.
+
+---
+
+## Datenschutzerklärung
+
+Fines up to **€20 million or 4% of annual turnover**.
+
+Must include: who collects data, what data (form, cookies, IP), for what purpose, who has access, user rights.
+
+---
+
+## Cookie Banner
+
+For non-essential cookies (Analytics, advertising) — **mandatory**. Declining must be as easy as accepting.
+
+Free tools: **Borlabs Cookie** (WordPress) or **Cookiebot**.
+
+---
+
+## Placement
+
+Impressum and Datenschutz in the Footer of **every page**, reachable in **1 click**.
+
+---
+
+## Free Generators
+
+- datenschutz-generator.de
+- e-recht24.de
+- dsgvo-generator.net`,
+    },
+  },
 ]
 
 // Helper: get post by slug
@@ -1704,185 +1884,7 @@ Germany mandates: Impressum, GDPR policy, T&C, 14-day return right, prices with 
   },
 
   // ─── POST 9 ───────────────────────────────────────────────────
-  {
-    slug: 'impressum-datenschutz-deutschland',
-    date: '2026-04-15',
-    readMin: { uk: 5, de: 5, en: 5 },
-    category: { uk: 'Право', de: 'Recht', en: 'Legal' },
-    cover: null,
-    title: {
-      uk: "Impressum і Datenschutz: обов'язкові сторінки для сайту в Німеччині",
-      de: 'Impressum und Datenschutz: Pflichtseiten für Websites in Deutschland',
-      en: 'Impressum and Datenschutz: Mandatory Pages for Websites in Germany',
-    },
-    excerpt: {
-      uk: "Кожен сайт в Німеччині зобов'язаний мати Impressum і Datenschutzerklärung. Без них — штрафи від 1 000€. Пояснюємо що саме потрібно.",
-      de: 'Jede Website in Deutschland braucht Impressum und Datenschutzerklärung. Ohne sie — Bußgelder ab 1.000€. Wir erklären, was benötigt wird.',
-      en: 'Every website in Germany must have an Impressum and Datenschutzerklärung. Without them — fines from €1,000. We explain exactly what is needed.',
-    },
-    body: {
-      uk: `## Правова основа
 
-Відсутність Impressum — адміністративне правопорушення за **§ 5 TMG** і **§ 55 RStV**. Штраф: від **1 000€ до 50 000€**. Плюс судові витрати від Abmahnung.
-
-Практика Abmahnung в Німеччині дуже поширена — адвокатські бюро активно шукають сайти без Impressum.
-
----
-
-## Хто зобов'язаний мати Impressum?
-
-Всі з комерційною онлайн-присутністю: фрілансери, компанії, інтернет-магазини, блоги з рекламою, комерційні Instagram/Facebook-профілі.
-
----
-
-## Що повинно бути в Impressum
-
-**Для фізичних осіб:**
-- Повне ім'я
-- Повна адреса (не PO Box)
-- Email адреса
-
-**Для юридичних осіб (GmbH, UG):**
-- Назва компанії, адреса, форма власності
-- Імена директорів
-- Handelsregisternummer і Registergericht
-- USt-IdNr. (якщо є)
-
----
-
-## Datenschutzerklärung (DSGVO)
-
-Штрафи за порушення: до **20 млн € або 4% річного обороту**.
-
-**Що повинно бути:**
-1. Хто збирає дані (ваші контакти)
-2. Які дані: контактна форма, cookies, IP
-3. Для чого: обробка запитів, аналітика
-4. Хто має доступ: хостинг, Google тощо
-5. Права користувача: доступ, виправлення, видалення
-
----
-
-## Cookie Banner
-
-Якщо використовуєте не-необхідні cookies (Google Analytics, реклама) — banner **обов'язковий**. Відмова повинна бути так само легкою як прийняття.
-
-Безкоштовно: **Borlabs Cookie** (WordPress) або **Cookiebot**.
-
----
-
-## Де розмістити
-
-- Impressum і Datenschutz — в Footer **кожної сторінки**
-- Доступні в **1 клік** з будь-якої сторінки
-
----
-
-## Безкоштовні генератори
-
-- datenschutz-generator.de
-- e-recht24.de
-- dsgvo-generator.net
-
-⚠️ Генератори — базовий шаблон. Для специфічних ситуацій — консультація юриста.`,
-
-      de: `## Rechtliche Grundlage
-
-Kein Impressum — Ordnungswidrigkeit nach **§ 5 TMG** und **§ 55 RStV**. Bußgeld: **1.000€ bis 50.000€**. Die Abmahn-Praxis ist in Deutschland sehr verbreitet.
-
----
-
-## Wer braucht ein Impressum?
-
-Alle mit kommerzieller Online-Präsenz: Freiberufler, Unternehmen, Online-Shops, Blogs mit Werbung, kommerzielle Social-Media-Profile.
-
----
-
-## Was muss im Impressum stehen?
-
-**Einzelpersonen:** vollständiger Name, vollständige Adresse (kein Postfach), E-Mail.
-
-**Juristische Personen (GmbH, UG):** Firmenname, Adresse, Rechtsform, Geschäftsführernamen, Handelsregisternummer, Registergericht, USt-IdNr.
-
----
-
-## Datenschutzerklärung
-
-Bußgelder bis **20 Mio. € oder 4% Jahresumsatz**.
-
-Inhalt: wer Daten erhebt, welche (Formular, Cookies, IP), wozu, wer Zugang hat, Nutzerrechte.
-
----
-
-## Cookie-Banner
-
-Bei nicht notwendigen Cookies (Analytics, Werbung) — **Pflicht**. Ablehnen muss genauso einfach sein wie Akzeptieren.
-
-Kostenlos: **Borlabs Cookie** (WordPress) oder **Cookiebot**.
-
----
-
-## Platzierung
-
-Impressum und Datenschutz im Footer **jeder Seite**, erreichbar in **1 Klick**.
-
----
-
-## Kostenlose Generatoren
-
-- datenschutz-generator.de
-- e-recht24.de
-- dsgvo-generator.net`,
-
-      en: `## Legal Basis
-
-No Impressum — administrative offense under **§ 5 TMG** and **§ 55 RStV**. Fine: **€1,000 to €50,000**. The Abmahnung practice is very widespread in Germany.
-
----
-
-## Who Needs an Impressum?
-
-Everyone with commercial online presence: freelancers, companies, online stores, blogs with ads, commercial social media profiles.
-
----
-
-## What Must Be in the Impressum?
-
-**Individuals:** full name, full address (no PO Box), email.
-
-**Legal entities (GmbH, UG):** company name, address, legal form, director names, commercial register number, registration court, VAT ID.
-
----
-
-## Datenschutzerklärung
-
-Fines up to **€20 million or 4% of annual turnover**.
-
-Must include: who collects data, what data (form, cookies, IP), for what purpose, who has access, user rights.
-
----
-
-## Cookie Banner
-
-For non-essential cookies (Analytics, advertising) — **mandatory**. Declining must be as easy as accepting.
-
-Free tools: **Borlabs Cookie** (WordPress) or **Cookiebot**.
-
----
-
-## Placement
-
-Impressum and Datenschutz in the Footer of **every page**, reachable in **1 click**.
-
----
-
-## Free Generators
-
-- datenschutz-generator.de
-- e-recht24.de
-- dsgvo-generator.net`,
-    },
-  },
 
   // ─── POST 10 ──────────────────────────────────────────────────
   {
