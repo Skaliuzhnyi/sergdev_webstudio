@@ -4,6 +4,187 @@
 
 export const POSTS = [
   {
+    slug: 'google-analytics-4-setup',
+    date: '2026-05-15',
+    readMin: { uk: 5, de: 5, en: 5 },
+    category: { uk: 'Аналітика', de: 'Analytics', en: 'Analytics' },
+    cover: null,
+    title: {
+      uk: 'Google Analytics 4: 6 метрик які реально важливі для малого бізнесу',
+      de: 'Google Analytics 4: 6 Metriken die für kleine Unternehmen wirklich wichtig sind',
+      en: 'Google Analytics 4: 6 Metrics That Actually Matter for Small Business',
+    },
+    excerpt: {
+      uk: 'GA4 встановлено — і що далі? Більшість власників бізнесу дивляться на цифри і не розуміють що з ними робити. Пояснюємо 6 метрик які мають значення.',
+      de: 'GA4 ist installiert — und jetzt? Die meisten Unternehmer schauen auf Zahlen ohne zu wissen, was damit anfangen. Wir erklären 6 Metriken die wirklich wichtig sind.',
+      en: 'GA4 is installed — now what? Most business owners look at numbers without knowing what to do. We explain 6 metrics that actually matter.',
+    },
+    body: {
+      uk: `## Чому аналітика важлива?
+
+Без аналітики ви керуєте бізнесом наосліп. Не знаєте звідки приходять клієнти, які сторінки відлякують відвідувачів і скільки коштує один лід.
+
+Google Analytics 4 — безкоштовний інструмент що відповідає на всі ці питання.
+
+---
+
+## Як підключити GA4 (коротко)
+
+1. Зайдіть на [analytics.google.com](https://analytics.google.com)
+2. Створіть акаунт і властивість для сайту
+3. Отримайте **Measurement ID** (формат G-XXXXXXXXXX)
+4. Додайте скрипт в head сайту або через Google Tag Manager
+
+---
+
+## 6 метрик які реально важливі
+
+### 1. Активні користувачі
+
+Скільки людей були на сайті. Дивіться **динаміку** — ростуть чи падають? Різкий спад без причини — можлива проблема з індексацією.
+
+### 2. Канали трафіку
+
+- **Organic Search** — з Google без реклами
+- **Direct** — ввели адресу напряму
+- **Referral** — з інших сайтів
+- **Paid Search** — з реклами
+
+Якщо 90% — Direct: сайт знаходять лише ті хто вже знає про вас. Нових клієнтів з пошуку немає.
+
+### 3. Engagement Rate
+
+Відсоток сесій де користувач провів **> 10 секунд або перейшов на іншу сторінку**.
+
+Норма: **> 50%**. Нижче — сторінка не відповідає очікуванням.
+
+### 4. Average Engagement Time
+
+Середній час залученості. Якщо люди проводять на лендінгу 8 секунд — вони не читають текст. Норма для лендінгу: **> 45 секунд**.
+
+### 5. Conversions (Конверсії)
+
+Найважливіша метрика. GA4 не відстежує їх автоматично — налаштуйте вручну:
+- Натискання кнопки "Залишити заявку"
+- Відправка форми
+- Натискання на телефон
+
+Без налаштованих конверсій аналітика — просто красиві графіки.
+
+### 6. Landing Pages
+
+Які сторінки отримують найбільше трафіку і де найвищий Engagement Rate. Якщо головна отримує 80% трафіку але Engagement Rate 25% — переробляйте першу секцію.
+
+---
+
+## Бонус: Google Search Console
+
+Безкоштовний інструмент що показує:
+- За якими словами вас знаходять
+- Які сторінки мають найбільше показів
+- Технічні проблеми з індексацією
+
+Використовуйте разом з GA4 — повна картина присутності в Google.`,
+
+      de: `## Warum ist Analytics wichtig?
+
+Ohne Analytics leiten Sie Ihr Unternehmen blind: kein Wissen woher Kunden kommen, welche Seiten abschrecken, was ein Lead kostet.
+
+---
+
+## 6 Metriken die wirklich wichtig sind
+
+### 1. Aktive Nutzer
+
+Schauen Sie auf die **Dynamik**. Plötzlicher Rückgang ohne Grund — mögliches Indexierungsproblem.
+
+### 2. Traffic-Kanäle
+
+- **Organic Search** — aus Google ohne Werbung
+- **Direct** — Adresse direkt eingegeben
+- **Referral** — von anderen Websites
+- **Paid Search** — aus Werbung
+
+Wenn 90% Direct: nur Bekannte finden die Site. Keine neuen Kunden aus der Suche.
+
+### 3. Engagement Rate
+
+Prozentsatz der Sitzungen > 10 Sekunden oder mit Seitennavigation. Norm: **> 50%**.
+
+### 4. Average Engagement Time
+
+Wenn Nutzer 8 Sekunden auf der Landingpage verbringen — lesen sie nicht. Norm: **> 45 Sekunden**.
+
+### 5. Conversions
+
+Manuell einrichten:
+- Klick auf "Anfrage senden"
+- Formularabsendung
+- Klick auf Telefonnummer
+
+Ohne konfigurierte Konversionen sind Analytics nur schöne Diagramme.
+
+### 6. Landing Pages
+
+Welche Seiten bekommen meisten Traffic und wo ist Engagement Rate am höchsten.
+
+---
+
+## Bonus: Google Search Console
+
+Zeigt nach welchen Wörtern Sie gefunden werden, welche Seiten meiste Impressionen haben, technische Indexierungsprobleme.`,
+
+      en: `## Why Is Analytics Important?
+
+Without analytics you're running blind: no knowledge of where clients come from, which pages repel visitors, what a lead costs.
+
+---
+
+## 6 Metrics That Actually Matter
+
+### 1. Active Users
+
+Look at the **trend**. Sudden drop without reason — possible indexing problem.
+
+### 2. Traffic Channels
+
+- **Organic Search** — from Google without ads
+- **Direct** — typed address directly
+- **Referral** — from other websites
+- **Paid Search** — from advertising
+
+If 90% is Direct: only people who already know you find the site.
+
+### 3. Engagement Rate
+
+Percentage of sessions > 10 seconds or with page navigation. Benchmark: **> 50%**.
+
+### 4. Average Engagement Time
+
+If people spend 8 seconds on a landing page — they're not reading. Benchmark: **> 45 seconds**.
+
+### 5. Conversions
+
+Set up manually:
+- Click on "Leave a request"
+- Form submission
+- Click on phone number
+
+Without configured conversions, analytics is just pretty charts.
+
+### 6. Landing Pages
+
+Which pages get most traffic and where is Engagement Rate highest.
+
+---
+
+## Bonus: Google Search Console
+
+Shows which search terms find you, which pages have most impressions, technical indexing problems. Use alongside GA4 for the full picture.`,
+    },
+  },
+
+  {
     slug: 'landing-page-conversion-tipps',
     date: '2026-05-26',
     readMin: { uk: 6, de: 6, en: 6 },
@@ -1484,186 +1665,7 @@ export const POSTS = [
 
 
   // ─── POST 7 ───────────────────────────────────────────────────
-  {
-    slug: 'google-analytics-4-setup',
-    date: '2026-05-15',
-    readMin: { uk: 5, de: 5, en: 5 },
-    category: { uk: 'Аналітика', de: 'Analytics', en: 'Analytics' },
-    cover: null,
-    title: {
-      uk: 'Google Analytics 4: 6 метрик які реально важливі для малого бізнесу',
-      de: 'Google Analytics 4: 6 Metriken die für kleine Unternehmen wirklich wichtig sind',
-      en: 'Google Analytics 4: 6 Metrics That Actually Matter for Small Business',
-    },
-    excerpt: {
-      uk: 'GA4 встановлено — і що далі? Більшість власників бізнесу дивляться на цифри і не розуміють що з ними робити. Пояснюємо 6 метрик які мають значення.',
-      de: 'GA4 ist installiert — und jetzt? Die meisten Unternehmer schauen auf Zahlen ohne zu wissen, was damit anfangen. Wir erklären 6 Metriken die wirklich wichtig sind.',
-      en: 'GA4 is installed — now what? Most business owners look at numbers without knowing what to do. We explain 6 metrics that actually matter.',
-    },
-    body: {
-      uk: `## Чому аналітика важлива?
 
-Без аналітики ви керуєте бізнесом наосліп. Не знаєте звідки приходять клієнти, які сторінки відлякують відвідувачів і скільки коштує один лід.
-
-Google Analytics 4 — безкоштовний інструмент що відповідає на всі ці питання.
-
----
-
-## Як підключити GA4 (коротко)
-
-1. Зайдіть на [analytics.google.com](https://analytics.google.com)
-2. Створіть акаунт і властивість для сайту
-3. Отримайте **Measurement ID** (формат G-XXXXXXXXXX)
-4. Додайте скрипт в head сайту або через Google Tag Manager
-
----
-
-## 6 метрик які реально важливі
-
-### 1. Активні користувачі
-
-Скільки людей були на сайті. Дивіться **динаміку** — ростуть чи падають? Різкий спад без причини — можлива проблема з індексацією.
-
-### 2. Канали трафіку
-
-- **Organic Search** — з Google без реклами
-- **Direct** — ввели адресу напряму
-- **Referral** — з інших сайтів
-- **Paid Search** — з реклами
-
-Якщо 90% — Direct: сайт знаходять лише ті хто вже знає про вас. Нових клієнтів з пошуку немає.
-
-### 3. Engagement Rate
-
-Відсоток сесій де користувач провів **> 10 секунд або перейшов на іншу сторінку**.
-
-Норма: **> 50%**. Нижче — сторінка не відповідає очікуванням.
-
-### 4. Average Engagement Time
-
-Середній час залученості. Якщо люди проводять на лендінгу 8 секунд — вони не читають текст. Норма для лендінгу: **> 45 секунд**.
-
-### 5. Conversions (Конверсії)
-
-Найважливіша метрика. GA4 не відстежує їх автоматично — налаштуйте вручну:
-- Натискання кнопки "Залишити заявку"
-- Відправка форми
-- Натискання на телефон
-
-Без налаштованих конверсій аналітика — просто красиві графіки.
-
-### 6. Landing Pages
-
-Які сторінки отримують найбільше трафіку і де найвищий Engagement Rate. Якщо головна отримує 80% трафіку але Engagement Rate 25% — переробляйте першу секцію.
-
----
-
-## Бонус: Google Search Console
-
-Безкоштовний інструмент що показує:
-- За якими словами вас знаходять
-- Які сторінки мають найбільше показів
-- Технічні проблеми з індексацією
-
-Використовуйте разом з GA4 — повна картина присутності в Google.`,
-
-      de: `## Warum ist Analytics wichtig?
-
-Ohne Analytics leiten Sie Ihr Unternehmen blind: kein Wissen woher Kunden kommen, welche Seiten abschrecken, was ein Lead kostet.
-
----
-
-## 6 Metriken die wirklich wichtig sind
-
-### 1. Aktive Nutzer
-
-Schauen Sie auf die **Dynamik**. Plötzlicher Rückgang ohne Grund — mögliches Indexierungsproblem.
-
-### 2. Traffic-Kanäle
-
-- **Organic Search** — aus Google ohne Werbung
-- **Direct** — Adresse direkt eingegeben
-- **Referral** — von anderen Websites
-- **Paid Search** — aus Werbung
-
-Wenn 90% Direct: nur Bekannte finden die Site. Keine neuen Kunden aus der Suche.
-
-### 3. Engagement Rate
-
-Prozentsatz der Sitzungen > 10 Sekunden oder mit Seitennavigation. Norm: **> 50%**.
-
-### 4. Average Engagement Time
-
-Wenn Nutzer 8 Sekunden auf der Landingpage verbringen — lesen sie nicht. Norm: **> 45 Sekunden**.
-
-### 5. Conversions
-
-Manuell einrichten:
-- Klick auf "Anfrage senden"
-- Formularabsendung
-- Klick auf Telefonnummer
-
-Ohne konfigurierte Konversionen sind Analytics nur schöne Diagramme.
-
-### 6. Landing Pages
-
-Welche Seiten bekommen meisten Traffic und wo ist Engagement Rate am höchsten.
-
----
-
-## Bonus: Google Search Console
-
-Zeigt nach welchen Wörtern Sie gefunden werden, welche Seiten meiste Impressionen haben, technische Indexierungsprobleme.`,
-
-      en: `## Why Is Analytics Important?
-
-Without analytics you're running blind: no knowledge of where clients come from, which pages repel visitors, what a lead costs.
-
----
-
-## 6 Metrics That Actually Matter
-
-### 1. Active Users
-
-Look at the **trend**. Sudden drop without reason — possible indexing problem.
-
-### 2. Traffic Channels
-
-- **Organic Search** — from Google without ads
-- **Direct** — typed address directly
-- **Referral** — from other websites
-- **Paid Search** — from advertising
-
-If 90% is Direct: only people who already know you find the site.
-
-### 3. Engagement Rate
-
-Percentage of sessions > 10 seconds or with page navigation. Benchmark: **> 50%**.
-
-### 4. Average Engagement Time
-
-If people spend 8 seconds on a landing page — they're not reading. Benchmark: **> 45 seconds**.
-
-### 5. Conversions
-
-Set up manually:
-- Click on "Leave a request"
-- Form submission
-- Click on phone number
-
-Without configured conversions, analytics is just pretty charts.
-
-### 6. Landing Pages
-
-Which pages get most traffic and where is Engagement Rate highest.
-
----
-
-## Bonus: Google Search Console
-
-Shows which search terms find you, which pages have most impressions, technical indexing problems. Use alongside GA4 for the full picture.`,
-    },
-  },
 
   // ─── POST 8 ───────────────────────────────────────────────────
   {
