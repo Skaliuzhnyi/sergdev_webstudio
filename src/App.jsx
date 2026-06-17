@@ -10,6 +10,8 @@ import Projects from './pages/Projects'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import Contact from './pages/Contact'
+import Impressum from './pages/Impressum'
+import Datenschutz from './pages/Datenschutz'
 import NotFound from './pages/NotFound'
 
 function ScrollTop() {
