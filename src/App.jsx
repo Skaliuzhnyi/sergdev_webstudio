@@ -24,12 +24,14 @@ export default function App() {
       <ScrollTop />
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/"              element={<Home />} />
+        <Route path="/projects"      element={<Projects />} />
+        <Route path="/blog"          element={<Blog />} />
+        <Route path="/blog/:slug"    element={<BlogPost />} />
+        <Route path="/contact"       element={<Contact />} />
+        <Route path="/impressum"     element={<Impressum />} />
+        <Route path="/datenschutz"   element={<Datenschutz />} />
+        <Route path="*"              element={<NotFound />} />
       </Routes>
       <Footer />
       <FloatCta />

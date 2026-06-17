@@ -4,7 +4,7 @@
     <url>
         <loc>https://sergdev.website/</loc>
         <priority>1.0</priority>
-        <lastmod>2026-05-26</lastmod>
+        <lastmod>2026-06-17</lastmod>
     </url>
 
     <url>
@@ -12,10 +12,11 @@
         <priority>0.8</priority>
         <lastmod>2026-05-26</lastmod>
     </url>
+
     <url>
         <loc>https://sergdev.website/blog</loc>
         <priority>0.9</priority>
-        <lastmod>2026-05-26</lastmod>
+        <lastmod>2026-06-17</lastmod>
     </url>
 
     <url>
@@ -25,26 +26,34 @@
     </url>
 
     <url>
-        <loc>https://sergdev.website/blog/impressum-datenschutz-deutschland
-        </loc>
+        <loc>https://sergdev.website/impressum</loc>
+        <priority>0.3</priority>
+        <lastmod>2026-06-17</lastmod>
+    </url>
+
+    <url>
+        <loc>https://sergdev.website/datenschutz</loc>
+        <priority>0.3</priority>
+        <lastmod>2026-06-17</lastmod>
+    </url>
+
+    <url>
+        <loc>https://sergdev.website/blog/impressum-datenschutz-deutschland</loc>
         <priority>0.8</priority>
         <lastmod>2026-06-15</lastmod>
     </url>
     <url>
-        <loc>https://sergdev.website/blog/google-analytics-4-setup
-        </loc>
+        <loc>https://sergdev.website/blog/google-analytics-4-setup</loc>
         <priority>0.8</priority>
         <lastmod>2026-06-17</lastmod>
     </url>
     <url>
-        <loc>https://sergdev.website/blog/landing-page-conversion-tipps
-        </loc>
+        <loc>https://sergdev.website/blog/landing-page-conversion-tipps</loc>
         <priority>0.8</priority>
         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-        <loc>https://sergdev.website/blog/warum-ihre-website-kunden-verliert
-        </loc>
+        <loc>https://sergdev.website/blog/warum-ihre-website-kunden-verliert</loc>
         <priority>0.8</priority>
         <lastmod>2026-05-26</lastmod>
     </url>
@@ -54,8 +63,7 @@
         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
-        <loc>https://sergdev.website/blog/seo-basics-fuer-kleine-unternehmen
-        </loc>
+        <loc>https://sergdev.website/blog/seo-basics-fuer-kleine-unternehmen</loc>
         <priority>0.8</priority>
         <lastmod>2026-05-26</lastmod>
     </url>
@@ -71,33 +79,3 @@
         <lastmod>2026-05-26</lastmod>
     </url>
 </urlset>
-
-
-
-<!--
-<url>
-    <loc>https://sergdev.website/blog/landing-page-conversion-tipps</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-</url>
-<url>
-    <loc>https://sergdev.website/blog/google-analytics-4-setup</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-</url>
-<url>
-    <loc>https://sergdev.website/blog/woocommerce-online-shop-starten</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-</url>
-<url>
-    <loc>https://sergdev.website/blog/impressum-datenschutz-deutschland</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-</url>
-<url>
-    <loc>https://sergdev.website/blog/website-redesign-wann-und-warum</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-</url>
-</urlset>-->
